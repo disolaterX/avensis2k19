@@ -107,6 +107,9 @@ function openNav() {
 
   function openrob() {
 
+    document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
+
       document.getElementById("mainpage").style.display = 'none';
       document.getElementById("fncc").style.display = "none";
       document.getElementById("tech").style.display = "none";

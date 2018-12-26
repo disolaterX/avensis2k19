@@ -6,6 +6,13 @@
                                                     padding: 0;
                                                     font-family: 'Avenir Next';
                                                 }
+                                                #mainpage {
+                                                  display: block;
+                                                }
+                                                #second {
+                                                    display: none;
+                                                    margin-top: -38px;
+                                                }
                                                 #toggle {
                                                     display: block;
                                                     width: 28px;
@@ -570,8 +577,41 @@
                                                 #sponsorslist img:hover {
                                                     filter: grayscale(0%);
                                                 }
+                                                .headingg {
+                                                    text-align: center;
+                                                    font-size: 3.5rem;
+                                                    font-weight: 600;
+                                                }
+                                                .titlee {
+                                                    text-align: left;
+                                                    font-size: 20px;
+                                                    font-weight: 200;
+                                                    margin-left: 30px;
+                                                }
+
+                                                #second p {
+                                                    border: 1px solid black;
+                                                    text-align: justify;
+                                                    padding: 25px;
+                                                    margin: 25px;
+                                                    border-radius: 15px;
+                                                    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.884);
+                                                }
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  }
+
+
+
                                             }
-                                            
+
                                             @media only screen and (max-width: 480px) {
                                                 body,
                                                 html {
@@ -1049,4 +1089,34 @@
                                                 #sponsorslist img:hover {
                                                     filter: grayscale(0%);
                                                 }
+                                                .headingg {
+                                                    text-align: center;
+                                                    font-size: 3.5rem;
+                                                    font-weight: 600;
+                                                }
+                                                .titlee {
+                                                    text-align: left;
+                                                    font-size: 20px;
+                                                    font-weight: 200;
+                                                    margin-left: 30px;
+                                                }
+
+                                                #second p {
+                                                    border: 1px solid black;
+                                                    text-align: justify;
+                                                    padding: 25px;
+                                                    margin: 25px;
+                                                    border-radius: 15px;
+                                                    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.884);
+                                                }
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  }
                                             }

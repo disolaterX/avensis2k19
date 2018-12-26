@@ -5,22 +5,22 @@ var x = setInterval(function() {
 
   // Get todays date and time
   var now = new Date().getTime();
-    
+
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
-    
+
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    
+
   // Output the result in an element with id="demo"
   document.getElementById("days").innerHTML = days+" DAYS"
   document.getElementById("hours").innerHTML = hours+" HOURS"
   document.getElementById("minutes").innerHTML = minutes+" MINUTES"
 
-    
-  // If the count down is over, write some text 
+
+  // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("apptimer").innerHTML = "We Are Open";
@@ -36,11 +36,62 @@ function openNav() {
 
 
   }
-  
+
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
     document.getElementById("homefilter").style.display = "block";
     document.getElementById("homedata").style.display = "block";
     document.getElementById("btnn").style.display = "block";
+
+  }
+
+  function opentech(){
+    document.getElementById("mainpage").style.display = "none";
+    document.getElementById("litandquiz").style.display = "none";
+    document.getElementById("fncc").style.display = "none";
+    document.getElementById("robo").style.display = "none";
+
+
+    document.getElementById("second").style.display = "block";
+    document.getElementById("tech").style.display = "block"
+
+
+  }
+
+  function opencre(){
+
+      document.getElementById("mainpage").style.display = "none";
+      document.getElementById("litandquiz").style.display = "none";
+      document.getElementById("robo").style.display = "none";
+      document.getElementById("tech").style.display = "none";
+
+      document.getElementById("second").style.display = "block";
+      document.getElementById("fncc").style.display = "block";
+
+  }
+
+  function openlit() {
+
+      document.getElementById("mainpage").style.display = "none";
+      document.getElementById("fncc").style.display = "none";
+      document.getElementById("tech").style.display = "none";
+      document.getElementById("robo").style.display = "none";
+
+      document.getElementById("second").style.display = "block"
+      document.getElementById("litandquiz").style.display = "block"
+
+  }
+
+  function openrob() {
+
+alert("hello")
+
+      document.getElementById("mainpage").style.display = "none";
+      document.getElementById("fncc").style.display = "none";
+      document.getElementById("tech").style.display = "none";
+      document.getElementById("litandquiz").style.display = "none";
+
+      document.getElementById("second").style.display = "block"
+      document.getElementById("robo").style.display = "block"
 
   }

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 
-<head>
+<head id="mainpage">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,156 +12,320 @@
 
 <body>
 
-    <div class="container" id="homecontainer">
-        <div id="homefilter">
+    <div id="mainpage">
+        <div class="container" id="homecontainer">
+            <div id="homefilter">
+            </div>
+            <a onclick="openNav()" id="toggle"><span></span></a>
+            <img id="topright" src="./eagle color.png">
+            <div id="homedata">
+                <p id="titledata">Avensis 2019</p>
+                <p id="subtitledata">The annual tech fest of MSIT</p>
+                <p id="datedata">9th, 10th January - Janakpuri, Delhi</p>
+                <div id="apptimer">
+                    <li id="days">0 days</li>
+                    <li id="hours">0 hours</li>
+                    <li id="minutes">0 minutes</li>
+                </div>
+            </div>
+            <button id="btnn" class="btn" onclick="window.location.hash = '#event'" style="vertical-align:middle"><span>Events </span></button>
         </div>
-        <a onclick="openNav()" id="toggle"><span></span></a>
-        <img id="topright" src="./eagle color.png">
-        <div id="homedata">
-            <p id="titledata">Avensis 2019</p>
-            <p id="subtitledata">The annual tech fest of MSIT</p>
-            <p id="datedata">9th, 10th January - Janakpuri, Delhi</p>
-            <div id="apptimer">
-                <li id="days">0 days</li>
-                <li id="hours">0 hours</li>
-                <li id="minutes">0 minutes</li>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#abutus" onclick="closeNav()">About Us</a>
+                <a href="#event" onclick="closeNav()">Events</a>
+                <a href="#ourteam" onclick="closeNav()">Our Team</a>
+                <a href="#sponsors" onclick="closeNav()">Our Sponsors</a>
             </div>
         </div>
-        <button id="btnn" class="btn" onclick="window.location.hash = '#event'" style="vertical-align:middle"><span>Events </span></button>
+
+        <div id="aboutus">
+            <div id="aboutfilter">
+            </div>
+            <div id=alldataabout>
+                <p id="aboutustitle">About</p>
+                <div id="one">
+                    <p id="aboutusdata">Avensis, an unmatchable artefact of Maharaja Surajmal Institute of Technology is a blend of ingenuity, genius and creativity. Healthiest competition occurs when average people win by putting above average effort. The two day extravaganza
+                        is a panorama of high octane energy and zeal. We endeavour to deliver surpassing emanation every epoch.
+                    </p>
+                </div>
+                <p id="dirmess">Message From Director</p>
+                <div id="two">
+                    <p id="by">It is with immense pride that I announce the commencement of Avensis 2019, the annual technical festival of MSIT. This momentous celebration provides a platform for students to tap their potential and reveal their prodigious talents.
+                        I would like to applaud the consistent and untiring efforts of the students that make AVENSIS an unforgettable learning experience.
+                    </p>
+                </div>
+                <p id="dirconv">Message From Convener</p>
+                <div id="three">
+                    <p id="by2">MSIT is back with its annual technical fest, Avensis. The fest will provide an effective platform for instigating new ideas and constructive collaborations. Like each year, the students, with their dedication, exhilaration and enthusiasm,
+                        will make Avensis 2019 a huge technical extravaganza
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="event">
+            <div id="eventfilter">
+            </div>
+            <div id=eventdata>
+                <p>Events</p>
+                <div id="eventbutton">
+                    <button onclick="opentech()" style="background: url(./tech.png) center center no-repeat; background-size: cover;">Technical</button>
+                    <button onclick="openrob()" style="background: url(./robotic.jpg) center center no-repeat; background-size: cover;">Robotics</button>
+                    <button onclick="openlit()" style="background: url(./lit.jpg) center center no-repeat; background-size: cover;">Literary & Quiz</button>
+                    <button onclick="opencre()" style="background: url(./cre.png) center center no-repeat; background-size: cover;">Fun ’n’ Creativity</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="ourteam">
+            <div id="ourfilter">
+            </div>
+            <div id=teamdata>
+                <p>Our Team</p>
+                <div class="teamphoto">
+                    <a class="gallery-item" href="#">
+                        <img src="./CA/aashish.jpg" alt="Headshot of George Washington">
+                        <span class="text-wrapper">
+                                          <span class="name">CA Aashish</span>
+                    </a>
+                    <a class="gallery-item" href="#">
+                        <img src="./CA/rishabh.jpg" alt="Headshot of George Washington">
+                        <span class="text-wrapper">
+                                      <span class="name">CA Rishabh</span>
+                    </a>
+                    <a class="gallery-item" href="#">
+                        <img src="./CA/vishant.jpg" alt="Headshot of George Washington">
+                        <span class="text-wrapper">
+                                      <span class="name">CA Vishant</span>
+                    </a>
+                    <a class="gallery-item" href="#">
+                        <img src="./CA/archit.jpg" alt="Headshot of George Washington">
+                        <span class="text-wrapper">
+                                      <span class="name">CA Archit</span>
+                    </a>
+                </div>
+                <div id="teamphoto2">
+                    <a class="gallery-item" href="#">
+                        <img src="./CA/pranav.jpg" alt="Headshot of George Washington">
+                        <span class="text-wrapper">
+                                                  <span class="name">CA Pranav</span>
+                    </a>
+                    <a class="gallery-item" href="#">
+                        <img src="./CA/sarthak.jpg" alt="Headshot of George Washington">
+                        <span class="text-wrapper">
+                                                      <span class="name">CA Sarthak</span>
+                    </a>
+                    <a class="gallery-item" href="#">
+                        <img src="./CA/srishti.jpg" alt="Headshot of George Washington">
+                        <span class="text-wrapper">
+                                              <span class="name">CA Srishti</span>
+                    </a>
+                </div>
+            </div>
+            <div id=teamdata2>
+                <p>Our Team</p>
+                <div id="teamphoto">
+                    <img src="./CA/aashish.jpg">
+                    <img src="./CA/rishabh.jpg">
+                    <img src="./CA/vishant.jpg">
+                    <img src="./CA/archit.jpg">
+                </div>
+                <div id="teamphoto2">
+                    <img src="./CA/pranav.jpg">
+                    <img src="./CA/sarthak.jpg">
+                    <img src="./CA/srishti.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div id="sponsors">
+            <div id="sponsorfilter">
+            </div>
+            <div id=sponsorsdata>
+                <p>Sponsors</p>
+                <div id="sponsorslist">
+                    <img src="./sponsor/qbistro.png">
+                    <img src="./sponsor/zebron.png">
+                    <img src="./sponsor/AptechCE.png">
+                    <img src="./sponsor/cafeme.png">
+                    <img src="./sponsor/i3indya.jpg">
+                    <img src="./sponsor/mabel.jpg">
+                    <img src="./sponsor/tico.png">
+                    <img src="./sponsor/w.jpg">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="#abutus" onclick="closeNav()">About Us</a>
-            <a href="#event" onclick="closeNav()">Events</a>
-            <a href="#ourteam" onclick="closeNav()">Our Team</a>
-            <a href="#sponsors" onclick="closeNav()">Our Sponsors</a>
+    <div id="second">
+        <div id="robo">
+
+            <h1 class="headingg">Robotics</h1>
+
+            <h4 class="titlee">LINE FOLLOWING ROBOT</h4>
+
+            <p> The objective is to make your own line following robot which can complete custom tracks accurately in the shortest amount of time. The autonomous robot will begin it's position from an initial marked position in a dark isolated room. It will follow the
+            line strip beneath it and would cover the track. The robot has to lead it's path by sensing the line. The objective is to cover the entire track in least possible time with sufficient accuracy.
+            </p>
+            <hr>
+            <h4 class="titlee">ROBO WARS</h4>
+
+            <p>To build a autonomous robot which is capable of fighting another robot. Robot can have special abilities to fight another robot. The autonomous robot will be provided an arena to fight upon. There will be some time limit. The robot has to depart the another
+            robot from the arena for a clear win.
+            </p>
+            <hr>
+
+
+            <h4 class="titlee">ROBO RUGBY</h4>
+
+            <p>Robo Rugby is an event in which robots try to score a point by hitting the balls into the scoring zone at both end points of a playing table. Involves two small robots and some balls of different colours. Every coloured ball clutches different points.
+            One robot is assigned to each team and the position of each ball at the end of the game governs the final score and hence the winner.
+            </p>
+<hr>
+            <h4 class="titlee">CARNAGE</h4>
+
+            <p>This is an event with an aim to construct an autonomous bot which can successfully pass through each of the hurdle in a specified order. The teams will compete on completing the course in the fastest time possible and rack up the most points which are
+            awarded on each successful hurdle pass.
+            </p>
+            <hr>
+            <h4 class="titlee">ROBO MAZE</h4>
+
+            <p>The robots have to start from one end of the maze, make the required turns and move till the far end of the maze in minimum time and with minimum penalties possible, while covering all the mandatory paths.
+            </p>
+            <hr>
+            <h4 class="titlee">ROBOWORLD - AN EXHIBITION</h4>
+
+            <p>This event will have an exhibition of autonomous robots with different abilities. Bots will be having unique abilities, they will be judged on creativity and functionality of the bot. Maximum registrations for the exhibition is restricted to 10. The event
+            will be judged by the teachers.
+            </p>
+            <hr>
         </div>
+
+        <div id="litandquiz">
+
+            <h1 class="headingg">Lit & Quiz</h1>
+
+            <h4 class="titlee">Face The Masks</h4>
+
+            <p>Round 1:
+            Unfolding The Curtains Participants get to see photographs of 5 different movie characters with a 30 seconds time slot provided for the entire event wherein they have accomplish the following tasks: 1. 2. 3. 4. Name of Actor Name of Character Name of
+            the Movie Whether the character is protagonist or antagonist.
+           Round 2:
+            Momo-Fizz Pong It’s a game in which players can come in a team of 2-3 wherein they will encounter six cups randomly filled with consumable eatables (like Momo chutney, Chasni ,Extra Lemon Lime etc). A single player from a team has to shoot a ping pong
+            ball in one of these cups with maximum of 3 attempts to a team. Under each of six cups there is a slip containing 3 questions (Quotation Competition, Riddles or Famous Dialogue Completion) out of which any 2 correct answers will do the job
+            and the teams will fetch exciting rewards.( A challenging and exciting team task could also be given in the slip and upon competition prizes would be provided).
+            </p>
+
+            <hr>
+            <h4 class="titlee">Judge A Book By Its Cover</h4>
+
+            <p>Preliminary Round (Registration Day):
+            Pictionary - The game will work as an icebreaker wherein the participants will have to draw a suitable picture according to a randomly chosen word. It will be a fun event which will serve a two fold purpose to enthral as well as screen the contestants
+            for next round.
+           Round 1:
+            In this round a movie trailer (or a part of movie) will be shown to the participants and they will have to guess the plot of the movie (Bonus points will be awarded if they guess the cast , director etc. ). Whoever is closest to the plot proceeds to the
+            next round.
+            Round 2:
+            In second round the participants will be given a book cover (Back and Front) and they have to guess the storyline or the end of the plot (whichever is suitable for that particular novel’s context). Bonus questions can be asked like whether the book is
+            a best seller/ author’s name / year of publication etc.
+            </p>
+            <hr>
+            <h4 class="titlee">Meme Competition</h4>
+<p>
+            Participants will be given a random picture from the internet and will be asked to make a meme out of it. Picture can be any event , show or just a public place or news debate with the horizon wide open. One must show their creativity skills with a knack
+            of pun and humour embedded without deviating from the situation given. The event can be judged by the audience’s response or via social media platforms.
+</p><hr>
+            <h4 class="titlee">Slam Poetry </h4>
+<p>
+            Poetry Slam is all about writing short poems so that participants can make it big. People need to come up with cosmic lines and the audience will be snapping fingers with their rhymes. They need to swift, sure and witty all at the same time making it
+            natural and touching. So people must grab a pen and Avensis 2019 provides a platform to keep slammin’.
+</p><hr>
+            <h4 class="titlee">Quizzing It Out </h4>
+<p>
+            The real battle of brains is the quiz. The quiz will be based on pop culture including music, movies, TV shows and general trivia. The participants will be in teams competing with each other in the battle of wits. Bringing new and interesting rounds rather
+            than the same old quizzing methods and widening the horizon to find out the king of pop culture is a synopsis of Quizzing It Out.
+</p><hr>
+            <h4 class="titlee">StandUp Comedy </h4>
+<p>
+            They say laughter is a tranquilizer with no side effects. Avensis 2019 welcomes doctors who will make you forget your tough ties with life with their StandUp Specials. The class clowns are provided with a stage to show that humor is also an art. Bringing
+            out the best creative and comic minds to take stage and energise the crowd. Humor is something that sometimes brings out the best in people. Let the students get up and stand up to prove their worth.
+</p><hr>
+            <h4 class="titlee">Management Quiz </h4>
+<p>
+            Management Quiz is here to take you through an array of management scenarios and corporate world trivia. Prelims : One mark for each question.
+
+            Round 1 :
+            Ten points for every correct answer. Fifteen points for every passed question.
+            Round 2:
+            Passing the question is not allowed rather pounce is allowed. Pounce opens other teams to attempt the question raised by writting down the answer and showing it to the quizmaster. Ten points for a correct question (also, if the question is answered by
+            pounce), and Minus five points for incorrect answer in case of pounce.
+            Round 3:
+            Five points for every correct answer. Total time limit for each team is 1.5 minutes i.e. 90 seconds.
+</p><hr>
+            <h4 class="titlee">Parakh - The case study competition</h4>
+<p>
+            Always believed in your business sense and analytical abilities? Always dreamt of being a management mastermind? Here's a chance to prove yourself! On the spot registration will take place from 10a. m. onwards on the day of the event. The event shall
+            have two rounds.
+</p><hr>
+            <h4 class="titlee">EXTEMPORE (Just A Minute)</h4>
+<p>
+            The participants will be given their topics through chits. They will have to speak on the given topic for at least 1 minute and 2 minutes at maximum. The preparation time given to each participant will be 1 minute. The topics once given to the participants
+            will not be changed under any circumstances.
+</p><hr>
+            <h4 class="titlee">CREATIVE WRITING</h4>
+<p>
+            There are no restrictions to the form of writing. (This includes poetry, story, articles etc.) The topics will be given on the spot. Time limit for the writing will be 1 hour. Only one entry per person is allowed Entries can be either in English or in
+            Hindi.
+</p><hr>
+        </div>
+
+        <div id="fncc">
+
+            <h1 class="headingg">Fun ’n’ Creativity</h1>
+
+            <h4 class="titlee">ULTIMATE CHALLENGE:</h4>
+<p>
+            Series of tasks that seemingly challenges the physical and mental strength of the participants. Team sport.
+
+</p><hr>
+            <h4 class="titlee">BOLLYTALK:</h4>
+<p>
+            It consist of tasks and quizzes related to Hindi Cinema. Many people are very fond of it. Challenges like dumb-charades, guess the movie, chit and chat etc
+</p><hr>
+
+            <h4 class="titlee">FOODGASM:</h4>
+<p>
+            Event for food lovers. Challenges that would limit the taste and capacity of every binge eater. They participate as individuals
+</p><hr>
+
+            <h4 class="titlee">GALI SPORT:</h4>
+            <p>
+            It's for sports enthusiasts. It has series of events like * Gali Cricket: Small scale cricket competition * Tug of War * Panna Knockout: Football challenge * Board of Twist: A board game similar to snake ladders. Participants will play in team of two.
+            One will roll the dice, other one will move forward on the board and perform the tasks that comes up on board within certain time limit.
+
+            </p><hr>
+            <h4 class="titlee">TREASURE HUNT/ CASE STUDY :</h4>
+<p>
+            A game in which players search for hidden objects by following a trail of clues to solve a mystery. It is to be played in group of 3 or 4 members.
+</P><hr>
+            <h4 class="titlee">THE AD MAD SHOW</h4>
+            <p>
+            “A marketer is an artist that paints on the canvas of an organisation!” Now is your chance to pick up the brush and hit the canvas. Put your creative instincts to work and pave your way to the customers’ wallets.
+            </p><hr>
+        </div>
+
+
     </div>
 
-
-
-
-    <div id="aboutus">
-        <div id="aboutfilter">
-        </div>
-        <div id=alldataabout>
-            <p id="aboutustitle">About</p>
-            <div id="one">
-                <p id="aboutusdata">Avensis, an unmatchable artefact of Maharaja Surajmal Institute of Technology is a blend of ingenuity, genius and creativity. Healthiest competition occurs when average people win by putting above average effort. The two day extravaganza
-                    is a panorama of high octane energy and zeal. We endeavour to deliver surpassing emanation every epoch.
-                </p>
-            </div>
-            <p id="dirmess">Message From Director</p>
-            <div id="two">
-                <p id="by">It is with immense pride that I announce the commencement of Avensis 2019, the annual technical festival of MSIT. This momentous celebration provides a platform for students to tap their potential and reveal their prodigious talents. I
-                    would like to applaud the consistent and untiring efforts of the students that make AVENSIS an unforgettable learning experience.
-                </p>
-            </div>
-            <p id="dirconv">Message From Convener</p>
-            <div id="three">
-                <p id="by2">MSIT is back with its annual technical fest, Avensis. The fest will provide an effective platform for instigating new ideas and constructive collaborations. Like each year, the students, with their dedication, exhilaration and enthusiasm,
-                    will make Avensis 2019 a huge technical extravaganza
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="event">
-        <div id="eventfilter">
-        </div>
-        <div id=eventdata>
-            <p>Events</p>
-            <div id="eventbutton">
-                <button style="background: url(./tech.png) center center no-repeat; background-size: cover;">Technical</button>
-                <button style="background: url(./robotic.jpg) center center no-repeat; background-size: cover;">Robotics</button>
-                <button style="background: url(./lit.jpg) center center no-repeat; background-size: cover;">Literary & Quiz</button>
-                <button style="background: url(./cre.png) center center no-repeat; background-size: cover;">Fun ’n’ Creativity</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="ourteam">
-        <div id="ourfilter">
-        </div>
-        <div id=teamdata>
-            <p>Our Team</p>
-            <div class="teamphoto">
-                <a class="gallery-item" href="#">
-                    <img src="./CA/aashish.jpg" alt="Headshot of George Washington">
-                    <span class="text-wrapper">
-                              <span class="name">CA Aashish</span>
-                </a>
-                <a class="gallery-item" href="#">
-                    <img src="./CA/rishabh.jpg" alt="Headshot of George Washington">
-                    <span class="text-wrapper">
-                          <span class="name">CA Rishabh</span>
-                </a>
-                <a class="gallery-item" href="#">
-                    <img src="./CA/vishant.jpg" alt="Headshot of George Washington">
-                    <span class="text-wrapper">
-                          <span class="name">CA Vishant</span>
-                </a>
-                <a class="gallery-item" href="#">
-                    <img src="./CA/archit.jpg" alt="Headshot of George Washington">
-                    <span class="text-wrapper">
-                          <span class="name">CA Archit</span>
-                </a>
-            </div>
-            <div id="teamphoto2">
-                <a class="gallery-item" href="#">
-                    <img src="./CA/pranav.jpg" alt="Headshot of George Washington">
-                    <span class="text-wrapper">
-                                      <span class="name">CA Pranav</span>
-                </a>
-                <a class="gallery-item" href="#">
-                    <img src="./CA/sarthak.jpg" alt="Headshot of George Washington">
-                    <span class="text-wrapper">
-                                          <span class="name">CA Sarthak</span>
-                </a>
-                <a class="gallery-item" href="#">
-                    <img src="./CA/srishti.jpg" alt="Headshot of George Washington">
-                    <span class="text-wrapper">
-                                  <span class="name">CA Srishti</span>
-                </a>
-            </div>
-        </div>
-        <div id=teamdata2>
-            <p>Our Team</p>
-            <div id="teamphoto">
-                <img src="./CA/aashish.jpg">
-                <img src="./CA/rishabh.jpg">
-                <img src="./CA/vishant.jpg">
-                <img src="./CA/archit.jpg">
-            </div>
-            <div id="teamphoto2">
-                <img src="./CA/pranav.jpg">
-                <img src="./CA/sarthak.jpg">
-                <img src="./CA/srishti.jpg">
-            </div>
-        </div>
-    </div>
-
-    <div id="sponsors">
-        <div id="sponsorfilter">
-        </div>
-        <div id=sponsorsdata>
-            <p>Sponsors</p>
-            <div id="sponsorslist">
-                <img src="./sponsor/qbistro.png">
-                <img src="./sponsor/zebron.png">
-                <img src="./sponsor/AptechCE.png">
-                <img src="./sponsor/cafeme.png">
-                <img src="./sponsor/i3indya.jpg">
-                <img src="./sponsor/mabel.jpg">
-                <img src="./sponsor/tico.png">
-                <img src="./sponsor/w.jpg">
-            </div>
-        </div>
+    <div id="tech">
     </div>
 
 
 </body>
+
+
 
 </html>

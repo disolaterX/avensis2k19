@@ -59,14 +59,14 @@ function openNav() {
   }
 
   function opencre(){
-
+    document.getElementById("fncc").style.display = "block";
       document.getElementById("mainpage").style.display = "none";
       document.getElementById("litandquiz").style.display = "none";
       document.getElementById("robo").style.display = "none";
       document.getElementById("tech").style.display = "none";
 
       document.getElementById("second").style.display = "block";
-      document.getElementById("fncc").style.display = "block";
+
 
   }
 

@@ -119,3 +119,10 @@ function openNav() {
       document.getElementById("robo").style.display = "block"
 
   }
+
+  function showBack() {
+    document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
+ document.getElementById("second").style.display = "none"
+ document.getElementById("mainpage").style.display = "block"
+  }

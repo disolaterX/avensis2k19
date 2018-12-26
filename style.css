@@ -6,9 +6,7 @@
                                                     padding: 0;
                                                     font-family: 'Avenir Next';
                                                 }
-                                                #mainpage {
-                                                  display: block;
-                                                }
+                                                
                                                 #second {
                                                     display: none;
                                                     margin-top: -38px;
@@ -618,6 +616,11 @@ hr {
                                                     margin: 0;
                                                     padding: 0;
                                                     font-family: 'Avenir Next';
+                                                }
+
+                                                #second {
+                                                    display: none;
+                                                    margin-top: -38px;
                                                 }
                                                 #toggle {
                                                     display: block;

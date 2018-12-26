@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./app.js"></script>
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container" id="homecontainer">
+        <div id="homefilter">
+        </div>
+        <a onclick="openNav()" id="toggle"><span></span></a>
+        <img id="topright" src="./eagle color.png">
+        <div id="homedata">
+            <p id="titledata">Avensis 2019</p>
+            <p id="subtitledata">The annual tech fest of MSIT</p>
+            <p id="datedata">9th, 10th January - Janakpuri, Delhi</p>
+            <div id="apptimer">
+                <li id="days">0 days</li>
+                <li id="hours">0 hours</li>
+                <li id="minutes">0 minutes</li>
+            </div>
+        </div>
+        <button id="btnn" class="btn" onclick="window.location.hash = '#event'" style="vertical-align:middle"><span>Events </span></button>
+    </div>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#abutus" onclick="closeNav()">About Us</a>
+            <a href="#event" onclick="closeNav()">Events</a>
+            <a href="#ourteam" onclick="closeNav()">Our Team</a>
+            <a href="#sponsors" onclick="closeNav()">Our Sponsors</a>
+        </div>
+    </div>
+
+
+
+
+    <div id="aboutus">
+        <div id="aboutfilter">
+        </div>
+        <div id=alldataabout>
+            <p id="aboutustitle">About</p>
+            <div id="one">
+                <p id="aboutusdata">Avensis, an unmatchable artefact of Maharaja Surajmal Institute of Technology is a blend of ingenuity, genius and creativity. Healthiest competition occurs when average people win by putting above average effort. The two day extravaganza
+                    is a panorama of high octane energy and zeal. We endeavour to deliver surpassing emanation every epoch.
+                </p>
+            </div>
+            <p id="dirmess">Message From Director</p>
+            <div id="two">
+                <p id="by">It is with immense pride that I announce the commencement of Avensis 2019, the annual technical festival of MSIT. This momentous celebration provides a platform for students to tap their potential and reveal their prodigious talents. I
+                    would like to applaud the consistent and untiring efforts of the students that make AVENSIS an unforgettable learning experience.
+                </p>
+            </div>
+            <p id="dirconv">Message From Convener</p>
+            <div id="three">
+                <p id="by2">MSIT is back with its annual technical fest, Avensis. The fest will provide an effective platform for instigating new ideas and constructive collaborations. Like each year, the students, with their dedication, exhilaration and enthusiasm,
+                    will make Avensis 2019 a huge technical extravaganza
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="event">
+        <div id="eventfilter">
+        </div>
+        <div id=eventdata>
+            <p>Events</p>
+            <div id="eventbutton">
+                <button style="background: url(./tech.png) center center no-repeat; background-size: cover;">Technical</button>
+                <button style="background: url(./robotic.jpg) center center no-repeat; background-size: cover;">Robotics</button>
+                <button style="background: url(./lit.jpg) center center no-repeat; background-size: cover;">Literary & Quiz</button>
+                <button style="background: url(./cre.png) center center no-repeat; background-size: cover;">Fun ’n’ Creativity</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="ourteam">
+        <div id="ourfilter">
+        </div>
+        <div id=teamdata>
+            <p>Our Team</p>
+            <div class="teamphoto">
+                <a class="gallery-item" href="#">
+                    <img src="./CA/aashish.jpg" alt="Headshot of George Washington">
+                    <span class="text-wrapper">
+                              <span class="name">CA Aashish</span>
+                </a>
+                <a class="gallery-item" href="#">
+                    <img src="./CA/rishabh.jpg" alt="Headshot of George Washington">
+                    <span class="text-wrapper">
+                          <span class="name">CA Rishabh</span>
+                </a>
+                <a class="gallery-item" href="#">
+                    <img src="./CA/vishant.jpg" alt="Headshot of George Washington">
+                    <span class="text-wrapper">
+                          <span class="name">CA Vishant</span>
+                </a>
+                <a class="gallery-item" href="#">
+                    <img src="./CA/archit.jpg" alt="Headshot of George Washington">
+                    <span class="text-wrapper">
+                          <span class="name">CA Archit</span>
+                </a>
+            </div>
+            <div id="teamphoto2">
+                <a class="gallery-item" href="#">
+                    <img src="./CA/pranav.jpg" alt="Headshot of George Washington">
+                    <span class="text-wrapper">
+                                      <span class="name">CA Pranav</span>
+                </a>
+                <a class="gallery-item" href="#">
+                    <img src="./CA/sarthak.jpg" alt="Headshot of George Washington">
+                    <span class="text-wrapper">
+                                          <span class="name">CA Sarthak</span>
+                </a>
+                <a class="gallery-item" href="#">
+                    <img src="./CA/srishti.jpg" alt="Headshot of George Washington">
+                    <span class="text-wrapper">
+                                  <span class="name">CA Srishti</span>
+                </a>
+            </div>
+        </div>
+        <div id=teamdata2>
+            <p>Our Team</p>
+            <div id="teamphoto">
+                <img src="./CA/aashish.jpg">
+                <img src="./CA/rishabh.jpg">
+                <img src="./CA/vishant.jpg">
+                <img src="./CA/archit.jpg">
+            </div>
+            <div id="teamphoto2">
+                <img src="./CA/pranav.jpg">
+                <img src="./CA/sarthak.jpg">
+                <img src="./CA/srishti.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div id="sponsors">
+        <div id="sponsorfilter">
+        </div>
+        <div id=sponsorsdata>
+            <p>Sponsors</p>
+            <div id="sponsorslist">
+                <img src="./sponsor/qbistro.png">
+                <img src="./sponsor/zebron.png">
+                <img src="./sponsor/AptechCE.png">
+                <img src="./sponsor/cafeme.png">
+                <img src="./sponsor/i3indya.jpg">
+                <img src="./sponsor/mabel.jpg">
+                <img src="./sponsor/tico.png">
+                <img src="./sponsor/w.jpg">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

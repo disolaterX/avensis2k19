@@ -1,0 +1,1052 @@
+                                            @media only screen and (min-width: 480px) {
+                                                /* For desktop: */
+                                                body,
+                                                html {
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    font-family: 'Avenir Next';
+                                                }
+                                                #toggle {
+                                                    display: block;
+                                                    width: 28px;
+                                                    height: 30px;
+                                                    /* margin: 50px 30px; */
+                                                    margin: 0;
+                                                    /* top: 50; */
+                                                    top: 55px;
+                                                    left: 25px;
+                                                    position: relative
+                                                }
+                                                #toggle span:after,
+                                                #toggle span:before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 0;
+                                                    top: -9px;
+                                                }
+                                                #toggle span:after {
+                                                    top: 9px;
+                                                }
+                                                #toggle span {
+                                                    position: relative;
+                                                    display: block;
+                                                }
+                                                #toggle span,
+                                                #toggle span:after,
+                                                #toggle span:before {
+                                                    width: 100%;
+                                                    height: 5px;
+                                                    background-color: #888;
+                                                    transition: all 0.3s;
+                                                    backface-visibility: hidden;
+                                                    border-radius: 2px;
+                                                }
+                                                /* on activation */
+                                                #toggle.on span {
+                                                    background-color: transparent;
+                                                }
+                                                #toggle.on span:before {
+                                                    transform: rotate(45deg) translate(5px, 5px);
+                                                }
+                                                #toggle.on span:after {
+                                                    transform: rotate(-45deg) translate(7px, -8px);
+                                                }
+                                                #toggle.on+#menu {
+                                                    opacity: 1;
+                                                    visibility: visible;
+                                                }
+                                                .overlay {
+                                                    height: 100%;
+                                                    width: 0;
+                                                    position: fixed;
+                                                    z-index: 1;
+                                                    top: 0;
+                                                    left: 0;
+                                                    background-color: rgb(0, 0, 0);
+                                                    background-color: rgba(0, 0, 0, 0.9);
+                                                    overflow-x: hidden;
+                                                    transition: 0.5s;
+                                                }
+                                                .overlay-content {
+                                                    position: relative;
+                                                    top: 25%;
+                                                    width: 100%;
+                                                    text-align: center;
+                                                    margin-top: 30px;
+                                                }
+                                                .overlay a {
+                                                    padding: 8px;
+                                                    text-decoration: none;
+                                                    font-size: 36px;
+                                                    color: #818181;
+                                                    display: block;
+                                                    transition: 0.3s;
+                                                }
+                                                .overlay a:hover,
+                                                .overlay a:focus {
+                                                    color: #f1f1f1;
+                                                }
+                                                .overlay .closebtn {
+                                                    position: absolute;
+                                                    top: 20px;
+                                                    right: 45px;
+                                                    font-size: 60px;
+                                                }
+                                                .container .btn {
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -50%);
+                                                    -ms-transform: translate(-50%, -50%);
+                                                    display: inline-block;
+                                                    color: #FFFFFF;
+                                                    text-align: center;
+                                                    border: 1px solid white;
+                                                    font-size: 28px;
+                                                    padding: 20px;
+                                                    width: 200px;
+                                                    transition: all 0.5s;
+                                                    cursor: pointer;
+                                                    margin: 20% 0 0 0;
+                                                    background-color: #f4511e;
+                                                    border-radius: 50px;
+                                                }
+                                                .btn :focus {
+                                                    border: none;
+                                                }
+                                                .btn span {
+                                                    cursor: pointer;
+                                                    display: inline-block;
+                                                    position: relative;
+                                                    transition: 0.5s;
+                                                }
+                                                .btn:hover span {
+                                                    padding-right: 25px;
+                                                }
+                                                .btn:hover span:after {
+                                                    opacity: 1;
+                                                    right: 0;
+                                                }
+                                                .btn span:after {
+                                                    content: '\00bb';
+                                                    position: absolute;
+                                                    opacity: 0;
+                                                    top: 0;
+                                                    right: -20px;
+                                                    transition: 0.5s;
+                                                }
+                                                #homecontainer {
+                                                    background: url(./main.jpg) center center no-repeat;
+                                                    color: white;
+                                                    background-size: cover;
+                                                    height: 100vh;
+                                                    width: 100%;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    background-attachment: fixed;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                }
+                                                #topright {
+                                                    position: absolute;
+                                                    top: 8px;
+                                                    right: 16px;
+                                                    width: 128px;
+                                                }
+                                                #homefilter {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    opacity: 0.9;
+                                                    background-image: linear-gradient(to top, #810000, #650211, #460915, #270b11, #000000);
+                                                }
+                                                #homedata {
+                                                    position: relative;
+                                                    top: 40%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -40%);
+                                                }
+                                                #apptimer {
+                                                    position: relative;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    list-style: none;
+                                                    color: wheat;
+                                                    margin-top: 5%;
+                                                }
+                                                #apptimer li {
+                                                    border: 1px solid white;
+                                                    border-radius: 5px;
+                                                    margin: 10px 5px 0px 5px;
+                                                    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.884);
+                                                    padding: 2% 5%;
+                                                    font-size: 15px;
+                                                    text-transform: uppercase;
+                                                }
+                                                #titledata {
+                                                    font-size: 55px;
+                                                    font-weight: 700;
+                                                    margin: 0;
+                                                    padding-bottom: 30px;
+                                                    text-align: center;
+                                                    text-shadow: 4px 0px #000
+                                                }
+                                                #subtitledata {
+                                                    font-size: 18px;
+                                                    text-align: center;
+                                                }
+                                                #datedata {
+                                                    font-size: 24px;
+                                                    text-align: center;
+                                                }
+                                                #aboutus {
+                                                    background: url(./main.jpg) center center no-repeat;
+                                                    background-size: cover;
+                                                    height: auto;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    background-attachment: fixed;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    width: 100%;
+                                                    padding-bottom: 50px;
+                                                }
+                                                #aboutfilter {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    opacity: 0.9;
+                                                    background-image: linear-gradient(to bottom, #810000, #810026, #730043, #55005c, #1a1d6b);
+                                                }
+                                                #alldataabout {
+                                                    position: relative;
+                                                }
+                                                #aboutustitle {
+                                                    font-size: 40px;
+                                                    font-weight: 500;
+                                                    text-align: center;
+                                                    color: white;
+                                                    margin: 0;
+                                                    padding: 20px 0 40px 0;
+                                                }
+                                                #aboutusdata {
+                                                    float: left;
+                                                    clear: right;
+                                                    margin-left: 60px;
+                                                    width: 65%;
+                                                    padding: 10px 20px;
+                                                    text-align: justify;
+                                                    border-radius: 20px;
+                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+                                                    background: wheat;
+                                                    position: relative;
+                                                }
+                                                #dirmess {
+                                                    font-size: 20px;
+                                                    font-weight: 200;
+                                                    text-align: center;
+                                                    color: white;
+                                                    margin: 0;
+                                                    display: none;
+                                                    padding: 20px 0 20px 0;
+                                                }
+                                                #dirconv {
+                                                    font-size: 20px;
+                                                    font-weight: 200;
+                                                    text-align: center;
+                                                    color: white;
+                                                    display: none;
+                                                    margin: 0;
+                                                    padding: 20px 0 0px 0;
+                                                }
+                                                #aboutusdata:after {
+                                                    content: '';
+                                                    position: absolute;
+                                                    right: 0;
+                                                    top: 50%;
+                                                    width: 0;
+                                                    height: 0;
+                                                    border: 28px solid transparent;
+                                                    border-left-color: wheat;
+                                                    border-right: 0;
+                                                    border-bottom: 0;
+                                                    margin-top: -14px;
+                                                    margin-right: -28px;
+                                                }
+                                                #by2 {
+                                                    float: left;
+                                                    clear: right;
+                                                    margin-left: 60px;
+                                                    width: 65%;
+                                                    padding: 10px 20px;
+                                                    text-align: justify;
+                                                    border-radius: 20px;
+                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+                                                    background: wheat;
+                                                    position: relative;
+                                                }
+                                                #by2:after {
+                                                    content: '';
+                                                    position: absolute;
+                                                    right: 0;
+                                                    top: 50%;
+                                                    width: 0;
+                                                    height: 0;
+                                                    border: 28px solid transparent;
+                                                    border-left-color: wheat;
+                                                    border-right: 0;
+                                                    border-bottom: 0;
+                                                    margin-top: -14px;
+                                                    margin-right: -28px;
+                                                }
+                                                #one,
+                                                #two,
+                                                #three {
+                                                    width: 100%;
+                                                }
+                                                #by {
+                                                    float: right;
+                                                    clear: left;
+                                                    margin-right: 60px;
+                                                    width: 65%;
+                                                    padding: 10px 20px;
+                                                    text-align: justify;
+                                                    border-radius: 20px;
+                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+                                                    background: wheat;
+                                                    position: relative;
+                                                }
+                                                #by:after {
+                                                    content: '';
+                                                    position: absolute;
+                                                    left: 0;
+                                                    top: 50%;
+                                                    width: 0;
+                                                    height: 0;
+                                                    border: 28px solid transparent;
+                                                    border-right-color: wheat;
+                                                    border-left: 0;
+                                                    border-bottom: 0;
+                                                    margin-top: -14px;
+                                                    margin-left: -28px;
+                                                }
+                                                #event {
+                                                    background: url(./main.jpg) center center no-repeat;
+                                                    color: white;
+                                                    background-size: cover;
+                                                    height: auto;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    background-attachment: fixed;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    width: 100%;
+                                                    padding-bottom: 50px;
+                                                }
+                                                #eventfilter {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    opacity: 0.9;
+                                                    background-image: linear-gradient(to top, #1b6600, #005e42, #005173, #003e85, #1a1d6b);
+                                                }
+                                                #eventdata {
+                                                    position: relative;
+                                                    text-align: center;
+                                                }
+                                                #eventdata p {
+                                                    font-size: 70px;
+                                                    color: white;
+                                                    font-weight: 508;
+                                                    margin: 0;
+                                                    padding-bottom: 5%;
+                                                }
+                                                #eventbutton {
+                                                    position: relative;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: space-around;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                }
+                                                #eventbutton button {
+                                                    border: 1px solid black;
+                                                    color: white;
+                                                    font-weight: 400;
+                                                    font-size: 24px;
+                                                    padding: 60px 75px;
+                                                    border-radius: 10px;
+                                                    margin: 0 25px 25px 25px;
+                                                    flex-grow: 1;
+                                                    box-shadow: inset 0px 0 0 1000px rgba(10, 0, 15, .3);
+                                                    flex-basis: 40%;
+                                                }
+                                                #ourteam {
+                                                    /* background: url(./3.jpg) center center no-repeat; */
+                                                    background: url(./main.jpg) center center no-repeat;
+                                                    color: white;
+                                                    background-size: cover;
+                                                    height: auto;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    background-attachment: fixed;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    width: 100%;
+                                                    padding-bottom: 90px;
+                                                }
+                                                #ourfilter {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    opacity: 0.9;
+                                                    background-image: linear-gradient(to bottom, #1b6600, #625000, #862d02, #8b003b, #320735);
+                                                }
+                                                #teamdata {
+                                                    position: relative;
+                                                    /* top: 50%; */
+                                                    /* left: 50%; */
+                                                    /* transform: translate(-50%, -50%); */
+                                                    text-align: center;
+                                                }
+                                                #teamdata2 {
+                                                    display: none;
+                                                }
+                                                .#teamdata p {
+                                                    font-size: 40px;
+                                                    font-weight: 500;
+                                                }
+                                                .teamphoto {
+                                                    position: relative;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                    /* width: 880px; */
+                                                    margin: auto;
+                                                }
+                                                .gallery-item {
+                                                    border-radius: 50%;
+                                                    width: 200px;
+                                                    height: 200px;
+                                                    margin: 10px;
+                                                    text-decoration: none;
+                                                }
+                                                .gallery-item img {
+                                                    position: relative;
+                                                    border-radius: 50%;
+                                                    width: 200px;
+                                                    height: 200px;
+                                                    margin: 10px;
+                                                    text-decoration: none;
+                                                }
+                                                .text-wrapper {
+                                                    position: relative;
+                                                    width: 200px;
+                                                    height: 200px;
+                                                    border-radius: 50%;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    text-align: center;
+                                                    flex-wrap: wrap;
+                                                    color: #fff;
+                                                    opacity: 0;
+                                                    margin-top: -214px;
+                                                    margin-left: 10px;
+                                                }
+                                                .text-wrapper:hover {
+                                                    transition: all 0.8s ease;
+                                                    background: rgba(0, 0, 0, 0.6);
+                                                    opacity: 1;
+                                                }
+                                                #teamphoto2 {
+                                                    position: relative;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                    width: auto
+                                                }
+                                                #teamphoto2 img {
+                                                    border-radius: 50%;
+                                                    width: 200px;
+                                                    height: 200px;
+                                                    margin: 10px;
+                                                }
+                                                #sponsorfilter {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    opacity: 0.9;
+                                                    background-image: linear-gradient(to top, #000000, #240d17, #3d102d, #541348, #320735);
+                                                }
+                                                #sponsors {
+                                                    color: white;
+                                                    background-size: cover;
+                                                    height: fit-content;
+                                                    width: 100%;
+                                                    height: max-content;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: space-around;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                    position: relative;
+                                                    background: url(./main.jpg) center center no-repeat;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    background-attachment: fixed;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    width: 100%;
+                                                    padding-bottom: 50px
+                                                }
+                                                #sponsorsdata p {
+                                                    font-size: 40px;
+                                                    font-weight: 500;
+                                                }
+                                                #sponsorsdata {
+                                                    position: relative;
+                                                    /* top: 50%; */
+                                                    /* left: 50%; */
+                                                    /* transform: translate(-50%, -50%); */
+                                                    text-align: center;
+                                                }
+                                                #sponsorslist {
+                                                    position: relative;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                    width: auto;
+                                                }
+                                                #sponsorslist img {
+                                                    border-radius: 15%;
+                                                    width: 150px;
+                                                    height: 150px;
+                                                    margin: 8px;
+                                                    filter: grayscale(100%);
+                                                }
+                                                #sponsorslist img:hover {
+                                                    filter: grayscale(0%);
+                                                }
+                                            }
+                                            
+                                            @media only screen and (max-width: 480px) {
+                                                body,
+                                                html {
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    font-family: 'Avenir Next';
+                                                }
+                                                #toggle {
+                                                    display: block;
+                                                    width: 28px;
+                                                    height: 30px;
+                                                    /* margin: 50px 30px; */
+                                                    margin: 0;
+                                                    /* top: 50; */
+                                                    top: 40px;
+                                                    left: 20px;
+                                                    position: relative
+                                                }
+                                                #toggle span:after,
+                                                #toggle span:before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 0;
+                                                    top: -9px;
+                                                }
+                                                #toggle span:after {
+                                                    top: 9px;
+                                                }
+                                                #toggle span {
+                                                    position: relative;
+                                                    display: block;
+                                                }
+                                                #toggle span,
+                                                #toggle span:after,
+                                                #toggle span:before {
+                                                    width: 100%;
+                                                    height: 5px;
+                                                    background-color: #888;
+                                                    transition: all 0.3s;
+                                                    backface-visibility: hidden;
+                                                    border-radius: 2px;
+                                                }
+                                                /* on activation */
+                                                #toggle.on span {
+                                                    background-color: transparent;
+                                                }
+                                                #toggle.on span:before {
+                                                    transform: rotate(45deg) translate(5px, 5px);
+                                                }
+                                                #toggle.on span:after {
+                                                    transform: rotate(-45deg) translate(7px, -8px);
+                                                }
+                                                #toggle.on+#menu {
+                                                    opacity: 1;
+                                                    visibility: visible;
+                                                }
+                                                .overlay {
+                                                    height: 100%;
+                                                    width: 0;
+                                                    position: fixed;
+                                                    z-index: 1;
+                                                    top: 0;
+                                                    left: 0;
+                                                    background-color: rgb(0, 0, 0);
+                                                    background-color: rgba(0, 0, 0, 0.9);
+                                                    overflow-x: hidden;
+                                                    transition: 0.5s;
+                                                }
+                                                .overlay-content {
+                                                    position: relative;
+                                                    top: 25%;
+                                                    width: 100%;
+                                                    text-align: center;
+                                                    margin-top: 30px;
+                                                }
+                                                .overlay a {
+                                                    padding: 8px;
+                                                    text-decoration: none;
+                                                    font-size: 36px;
+                                                    color: #818181;
+                                                    display: block;
+                                                    transition: 0.3s;
+                                                }
+                                                .overlay a:hover,
+                                                .overlay a:focus {
+                                                    color: #f1f1f1;
+                                                }
+                                                .overlay .closebtn {
+                                                    position: absolute;
+                                                    top: 20px;
+                                                    right: 45px;
+                                                    font-size: 60px;
+                                                }
+                                                .btn :focus {
+                                                    border: none;
+                                                    outline: none;
+                                                }
+                                                .container .btn {
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -50%);
+                                                    -ms-transform: translate(-50%, -50%);
+                                                    display: inline-block;
+                                                    /* border-radius: 4px; */
+                                                    background-color: #f4511e;
+                                                    border: none;
+                                                    color: #FFFFFF;
+                                                    text-align: center;
+                                                    font-size: 28px;
+                                                    padding: 20px;
+                                                    width: 200px;
+                                                    transition: all 0.5s;
+                                                    cursor: pointer;
+                                                    margin: 65% 0 0 0;
+                                                    border-radius: 50px;
+                                                }
+                                                .btn span {
+                                                    outline: none;
+                                                    cursor: pointer;
+                                                    display: inline-block;
+                                                    position: relative;
+                                                    transition: 0.5s;
+                                                }
+                                                .btn:hover span {
+                                                    padding-right: 25px;
+                                                }
+                                                .btn:hover span:after {
+                                                    opacity: 1;
+                                                    right: 0;
+                                                }
+                                                .btn span:after {
+                                                    content: '\00bb';
+                                                    position: absolute;
+                                                    opacity: 0;
+                                                    top: 0;
+                                                    right: -20px;
+                                                    transition: 0.5s;
+                                                }
+                                                #homecontainer {
+                                                    background: url(./main.jpg) center center no-repeat;
+                                                    color: white;
+                                                    background-size: cover;
+                                                    height: 100vh;
+                                                    width: 100%;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    background-attachment: fixed;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                }
+                                                #topright {
+                                                    position: absolute;
+                                                    top: 5px;
+                                                    right: 5px;
+                                                    width: 80px;
+                                                }
+                                                #homefilter {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    opacity: 0.9;
+                                                    background-image: linear-gradient(to top, #810000, #650211, #460915, #270b11, #000000);
+                                                }
+                                                #homedata {
+                                                    position: relative;
+                                                    top: 40%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -40%);
+                                                }
+                                                #apptimer {
+                                                    position: relative;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    list-style: none;
+                                                    color: wheat;
+                                                    margin-top: 5%;
+                                                }
+                                                #apptimer li {
+                                                    border: 1px solid white;
+                                                    border-radius: 5px;
+                                                    margin: 10px 5px 0px 5px;
+                                                    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.884);
+                                                    padding: 2% 5%;
+                                                    font-size: 15px;
+                                                    text-transform: uppercase;
+                                                }
+                                                #titledata {
+                                                    font-size: 55px;
+                                                    font-weight: 700;
+                                                    margin: 0;
+                                                    padding-bottom: 30px;
+                                                    text-align: center;
+                                                    text-shadow: 4px 0px #000
+                                                }
+                                                #subtitledata {
+                                                    font-size: 18px;
+                                                    text-align: center;
+                                                }
+                                                #datedata {
+                                                    font-size: 24px;
+                                                    text-align: center;
+                                                }
+                                                #aboutus {
+                                                    height: auto;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    background-attachment: fixed;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    width: 100%;
+                                                    padding-bottom: 50px;
+                                                }
+                                                #aboutfilter {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    background-image: linear-gradient(to bottom, #810000, #810026, #730043, #55005c, #1a1d6b);
+                                                }
+                                                #alldataabout {
+                                                    position: relative;
+                                                }
+                                                #aboutustitle {
+                                                    font-size: 40px;
+                                                    font-weight: 500;
+                                                    text-align: center;
+                                                    color: white;
+                                                    margin: 0;
+                                                    padding: 20px 0 40px 0;
+                                                }
+                                                #dirmess {
+                                                    font-size: 20px;
+                                                    font-weight: 200;
+                                                    text-align: center;
+                                                    color: white;
+                                                    margin: 0;
+                                                    padding: 20px 0 20px 0;
+                                                }
+                                                #dirconv {
+                                                    font-size: 20px;
+                                                    font-weight: 200;
+                                                    text-align: center;
+                                                    color: white;
+                                                    margin: 0;
+                                                    padding: 20px 0 0px 0;
+                                                }
+                                                #aboutusdata {
+                                                    margin: 0 6%;
+                                                    padding: 10px 20px;
+                                                    text-align: justify;
+                                                    border-radius: 20px;
+                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+                                                    background: wheat;
+                                                }
+                                                #by {
+                                                    margin: 0% 6%;
+                                                    padding: 10px 20px;
+                                                    text-align: justify;
+                                                    border-radius: 20px;
+                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+                                                    background: wheat;
+                                                }
+                                                #by2 {
+                                                    margin: 5% 6%;
+                                                    padding: 10px 20px;
+                                                    text-align: justify;
+                                                    border-radius: 20px;
+                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+                                                    background: wheat;
+                                                }
+                                                #event {
+                                                    color: white;
+                                                    background-size: cover;
+                                                    height: auto;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    background-attachment: fixed;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    width: 100%;
+                                                    padding-bottom: 50px;
+                                                }
+                                                #eventfilter {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    background-image: linear-gradient(to top, #1b6600, #005e42, #005173, #003e85, #1a1d6b);
+                                                }
+                                                #eventdata {
+                                                    position: relative;
+                                                    text-align: center;
+                                                }
+                                                #eventdata p {
+                                                    font-size: 70px;
+                                                    color: white;
+                                                    font-weight: 508;
+                                                    margin: 0;
+                                                    padding-bottom: 5%;
+                                                }
+                                                #eventbutton {
+                                                    position: relative;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: space-around;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                }
+                                                #eventbutton button {
+                                                    border: 1px solid black;
+                                                    color: white;
+                                                    font-weight: 400;
+                                                    font-size: 24px;
+                                                    padding: 60px 75px;
+                                                    border-radius: 10px;
+                                                    margin: 0 25px 25px 25px;
+                                                    flex-grow: 1;
+                                                    box-shadow: inset 0px 0 0 1000px rgba(10, 0, 15, .3);
+                                                    flex-basis: 40%;
+                                                }
+                                                #eventbutton button:focus {
+                                                    border: none;
+                                                    outline: none;
+                                                }
+                                                #ourteam {
+                                                    color: white;
+                                                    background-size: cover;
+                                                    height: max-content;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    background-attachment: fixed;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    width: 100%;
+                                                    padding-bottom: 75px;
+                                                }
+                                                #ourfilter {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    background-image: linear-gradient(to bottom, #1b6600, #625000, #862d02, #8b003b, #320735);
+                                                }
+                                                #teamdata {
+                                                    display: none;
+                                                }
+                                                #teamdata2 {
+                                                    position: relative;
+                                                    display: block;
+                                                    /* top: 50%; */
+                                                    /* left: 50%; */
+                                                    /* transform: translate(-50%, -50%); */
+                                                    text-align: center;
+                                                }
+                                                #teamdata2 p {
+                                                    font-size: 40px;
+                                                    font-weight: 500;
+                                                }
+                                                #teamphoto {
+                                                    position: relative;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                    width: auto;
+                                                }
+                                                #teamphoto img {
+                                                    border-radius: 50%;
+                                                    width: 75px;
+                                                    height: 75px;
+                                                    margin: 2px;
+                                                }
+                                                #teamphoto2 {
+                                                    position: relative;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                    width: auto;
+                                                }
+                                                #teamphoto2 img {
+                                                    border-radius: 50%;
+                                                    width: 75px;
+                                                    height: 75px;
+                                                    margin: 2px;
+                                                }
+                                                #sponsorfilter {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    background-image: linear-gradient(to top, #000000, #240d17, #3d102d, #541348, #320735);
+                                                }
+                                                #sponsors {
+                                                    color: white;
+                                                    background-size: cover;
+                                                    height: fit-content;
+                                                    width: 100%;
+                                                    height: max-content;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: space-around;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                    position: relative;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    background-attachment: fixed;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    padding-bottom: 40px;
+                                                }
+                                                #sponsorsdata p {
+                                                    font-size: 40px;
+                                                    font-weight: 500;
+                                                }
+                                                #sponsorsdata {
+                                                    position: relative;
+                                                    /* top: 50%; */
+                                                    /* left: 50%; */
+                                                    /* transform: translate(-50%, -50%); */
+                                                    text-align: center;
+                                                }
+                                                #sponsorslist {
+                                                    position: relative;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    flex-wrap: wrap;
+                                                    width: auto;
+                                                }
+                                                #sponsorslist img {
+                                                    border-radius: 15%;
+                                                    width: 90px;
+                                                    height: 90px;
+                                                    margin: 4px;
+                                                    filter: grayscale(0%);
+                                                }
+                                                #sponsorslist img:hover {
+                                                    filter: grayscale(0%);
+                                                }
+                                            }

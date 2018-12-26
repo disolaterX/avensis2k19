@@ -28,6 +28,11 @@ var x = setInterval(function() {
 }, 1000);
 
 function openNav() {
+
+      document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+
+
     document.getElementById("myNav").style.width = "100%";
     document.getElementById("homefilter").style.display = "none";
     document.getElementById("homedata").style.display = "none";
@@ -38,6 +43,11 @@ function openNav() {
   }
 
   function closeNav() {
+
+        document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+
+
     document.getElementById("myNav").style.width = "0%";
     document.getElementById("homefilter").style.display = "block";
     document.getElementById("homedata").style.display = "block";
@@ -46,6 +56,11 @@ function openNav() {
   }
 
   function opentech(){
+
+        document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+
+
     document.getElementById("mainpage").style.display = "none";
     document.getElementById("litandquiz").style.display = "none";
     document.getElementById("fncc").style.display = "none";
@@ -59,6 +74,11 @@ function openNav() {
   }
 
   function opencre(){
+
+        document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+
+
     document.getElementById("fncc").style.display = "block";
       document.getElementById("mainpage").style.display = "none";
       document.getElementById("litandquiz").style.display = "none";
@@ -71,6 +91,9 @@ function openNav() {
   }
 
   function openlit() {
+
+    document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
 
       document.getElementById("mainpage").style.display = "none";
       document.getElementById("fncc").style.display = "none";

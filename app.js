@@ -84,9 +84,7 @@ function openNav() {
 
   function openrob() {
 
-alert("hello")
-
-      document.getElementById("mainpage").style.display = "none";
+      document.getElementById("mainpage").style.display = 'none';
       document.getElementById("fncc").style.display = "none";
       document.getElementById("tech").style.display = "none";
       document.getElementById("litandquiz").style.display = "none";

@@ -7,6 +7,35 @@
                                                     font-family: 'Avenir Next';
                                                 }
 
+
+
+
+
+
+
+
+
+                                                .footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   margin: 0;
+}
+
+.footer span{
+  color: white;
+
+text-align: center;
+
+font-size: 17px;
+
+margin: 0;
+}
+
                                                 #second {
                                                     display: none;
                                                     margin-top: -38px;
@@ -635,6 +664,26 @@ hr {
                                                     padding: 0;
                                                     font-family: 'Avenir Next';
                                                 }
+                                                .footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   margin: 0;
+}
+
+.footer span{
+  color: white;
+
+text-align: center;
+
+font-size: 17px;
+
+margin: 0;
+}
 
                                                 #second {
                                                     display: none;

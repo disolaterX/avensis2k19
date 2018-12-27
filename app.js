@@ -27,6 +27,10 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+function showEvent(){
+document.getElementById("event").scrollIntoView();
+}
+
 function openNav() {
 
       document.body.scrollTop = 0;

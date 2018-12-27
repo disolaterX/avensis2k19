@@ -26,7 +26,7 @@
                                                   display: block;
                                                   background: black;
                                                   color: white;
-top: 90px;
+top: 60px;
 left: 25px;
 position: relative;
 border: 1px solid black;
@@ -169,6 +169,13 @@ border-radius: 6px;
                                                     top: 8px;
                                                     right: 16px;
                                                     width: 128px;
+                                                }
+                                                #topright2{
+                                                      position: absolute;
+                                                      top: 5px;
+                                                      right: 5px;
+                                                      width: 80px;
+
                                                 }
                                                 #homefilter {
                                                     content: "";
@@ -590,7 +597,8 @@ border-radius: 6px;
                                                     text-align: center;
                                                     font-size: 3.5rem;
                                                     font-weight: 600;
-                                                    margin-top: 75px;
+                                                    margin-top: 4px;
+                                                    padding-bottom: 20px;
                                                 }
                                                 .titlee {
                                                     text-align: left;
@@ -645,14 +653,23 @@ hr {
                                                 }
                                                 #toggle2{
                                                   display: block;
-                                                  background: black;
-                                                  color: white;
-top: 90px;
-left: 25px;
+
+background: white;
+
+color: black;
+
+top: 60px;
+
+left: 85%;
+
 position: relative;
+
 border: 1px solid black;
-padding: 13px 17px;
-border-radius: 6px;}
+
+padding: 10px 15px;
+
+border-radius: 6px;
+                                                }
                                                 #toggle span:after,
                                                 #toggle span:before {
                                                     content: "";
@@ -793,6 +810,7 @@ border-radius: 6px;}
                                                     right: 5px;
                                                     width: 80px;
                                                 }
+
                                                 #homefilter {
                                                     content: "";
                                                     position: absolute;
@@ -1113,10 +1131,15 @@ border-radius: 6px;}
                                                     filter: grayscale(0%);
                                                 }
                                                 .headingg {
-                                                    text-align: center;
-                                                    font-size: 3.5rem;
-                                                    font-weight: 600;
-                                                    margin-top: 75px;
+                                                  text-align: center;
+
+font-size: 2.5rem;
+
+font-weight: 600;
+
+margin-top: 17px;
+
+padding-bottom: 30px;
                                                 }
                                                 .titlee {
                                                     text-align: left;
@@ -1131,6 +1154,13 @@ border-radius: 6px;}
                                                     margin: 25px;
                                                     border-radius: 15px;
                                                     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.884);
+                                                }
+
+                                                #topright2{
+                                                  position: absolute;
+top: 8px;
+left: 5px;
+width: 55px;
                                                 }
 
 

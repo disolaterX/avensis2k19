@@ -1,4 +1,5 @@
                                             @media only screen and (min-width: 480px) {
+
                                                 /* For desktop: */
                                                 body,
                                                 html {
@@ -8,38 +9,32 @@
                                                 }
 
 
-
-
-
-
-
-
-
                                                 .footer {
-   position: relative;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: center;
-   margin: 0;
-}
+                                                    position: relative;
+                                                    left: 0;
+                                                    bottom: 0;
+                                                    width: 100%;
+                                                    background-color: black;
+                                                    color: white;
+                                                    text-align: center;
+                                                    margin: 0;
+                                                }
 
-.footer span{
-  color: white;
+                                                .footer span {
+                                                    color: white;
 
-text-align: center;
+                                                    text-align: center;
 
-font-size: 17px;
+                                                    font-size: 17px;
 
-margin: 0;
-}
+                                                    margin: 0;
+                                                }
 
                                                 #second {
                                                     display: none;
                                                     margin-top: -38px;
                                                 }
+
                                                 #toggle {
                                                     display: block;
                                                     width: 28px;
@@ -51,17 +46,19 @@ margin: 0;
                                                     left: 25px;
                                                     position: relative
                                                 }
+
                                                 #toggle2 {
-                                                  display: block;
-                                                  background: black;
-                                                  color: white;
-top: 60px;
-left: 25px;
-position: relative;
-border: 1px solid black;
-padding: 13px 17px;
-border-radius: 6px;
-                                                    }
+                                                    display: block;
+                                                    background: black;
+                                                    color: white;
+                                                    top: 60px;
+                                                    left: 25px;
+                                                    position: relative;
+                                                    border: 1px solid black;
+                                                    padding: 13px 17px;
+                                                    border-radius: 6px;
+                                                }
+
                                                 #toggle span:after,
                                                 #toggle span:before {
                                                     content: "";
@@ -69,13 +66,16 @@ border-radius: 6px;
                                                     left: 0;
                                                     top: -9px;
                                                 }
+
                                                 #toggle span:after {
                                                     top: 9px;
                                                 }
+
                                                 #toggle span {
                                                     position: relative;
                                                     display: block;
                                                 }
+
                                                 #toggle span,
                                                 #toggle span:after,
                                                 #toggle span:before {
@@ -86,20 +86,25 @@ border-radius: 6px;
                                                     backface-visibility: hidden;
                                                     border-radius: 2px;
                                                 }
+
                                                 /* on activation */
                                                 #toggle.on span {
                                                     background-color: transparent;
                                                 }
+
                                                 #toggle.on span:before {
                                                     transform: rotate(45deg) translate(5px, 5px);
                                                 }
+
                                                 #toggle.on span:after {
                                                     transform: rotate(-45deg) translate(7px, -8px);
                                                 }
-                                                #toggle.on+#menu {
+
+                                                #toggle.on + #menu {
                                                     opacity: 1;
                                                     visibility: visible;
                                                 }
+
                                                 .overlay {
                                                     height: 100%;
                                                     width: 0;
@@ -112,6 +117,7 @@ border-radius: 6px;
                                                     overflow-x: hidden;
                                                     transition: 0.5s;
                                                 }
+
                                                 .overlay-content {
                                                     position: relative;
                                                     top: 25%;
@@ -119,6 +125,7 @@ border-radius: 6px;
                                                     text-align: center;
                                                     margin-top: 30px;
                                                 }
+
                                                 .overlay a {
                                                     padding: 8px;
                                                     text-decoration: none;
@@ -127,16 +134,19 @@ border-radius: 6px;
                                                     display: block;
                                                     transition: 0.3s;
                                                 }
+
                                                 .overlay a:hover,
                                                 .overlay a:focus {
                                                     color: #f1f1f1;
                                                 }
+
                                                 .overlay .closebtn {
                                                     position: absolute;
                                                     top: 20px;
                                                     right: 45px;
                                                     font-size: 60px;
                                                 }
+
                                                 .container .btn {
                                                     position: absolute;
                                                     top: 50%;
@@ -156,22 +166,27 @@ border-radius: 6px;
                                                     background-color: #f4511e;
                                                     border-radius: 50px;
                                                 }
+
                                                 .btn :focus {
                                                     border: none;
                                                 }
+
                                                 .btn span {
                                                     cursor: pointer;
                                                     display: inline-block;
                                                     position: relative;
                                                     transition: 0.5s;
                                                 }
+
                                                 .btn:hover span {
                                                     padding-right: 25px;
                                                 }
+
                                                 .btn:hover span:after {
                                                     opacity: 1;
                                                     right: 0;
                                                 }
+
                                                 .btn span:after {
                                                     content: '\00bb';
                                                     position: absolute;
@@ -180,6 +195,7 @@ border-radius: 6px;
                                                     right: -20px;
                                                     transition: 0.5s;
                                                 }
+
                                                 #homecontainer {
                                                     background: url(./main.jpg) center center no-repeat;
                                                     color: white;
@@ -193,19 +209,22 @@ border-radius: 6px;
                                                     background-repeat: no-repeat;
                                                     background-size: cover;
                                                 }
+
                                                 #topright {
                                                     position: absolute;
-                                                    top: 8px;
-                                                    right: 16px;
-                                                    width: 128px;
+                                                    top: 10px;
+                                                    right: 10px;
+                                                    width: 84px;
                                                 }
-                                                #topright2{
-                                                      position: absolute;
-                                                      top: 5px;
-                                                      right: 5px;
-                                                      width: 80px;
+
+                                                #topright2 {
+                                                    position: absolute;
+                                                    top: 5px;
+                                                    right: 5px;
+                                                    width: 80px;
 
                                                 }
+
                                                 #homefilter {
                                                     content: "";
                                                     position: absolute;
@@ -218,12 +237,14 @@ border-radius: 6px;
                                                     opacity: 0.9;
                                                     background-image: linear-gradient(to top, #810000, #650211, #460915, #270b11, #000000);
                                                 }
+
                                                 #homedata {
                                                     position: relative;
                                                     top: 40%;
                                                     left: 50%;
                                                     transform: translate(-50%, -40%);
                                                 }
+
                                                 #apptimer {
                                                     position: relative;
                                                     display: flex;
@@ -233,6 +254,7 @@ border-radius: 6px;
                                                     color: wheat;
                                                     margin-top: 5%;
                                                 }
+
                                                 #apptimer li {
                                                     border: 1px solid white;
                                                     border-radius: 5px;
@@ -242,24 +264,28 @@ border-radius: 6px;
                                                     font-size: 15px;
                                                     text-transform: uppercase;
                                                 }
+
                                                 #titledata {
-                                                    font-size: 55px;
+                                                    font-size: 66px;
                                                     font-weight: 700;
                                                     margin: 0;
                                                     padding-bottom: 30px;
                                                     text-align: center;
-                                                    text-shadow: 4px 0px #000
+                                                    text-shadow: 5px 2px #000
                                                 }
+
                                                 #subtitledata {
                                                     font-size: 18px;
                                                     text-align: center;
                                                 }
+
                                                 #datedata {
                                                     font-size: 24px;
                                                     text-align: center;
                                                 }
+
                                                 #aboutus {
-                                                    
+
                                                     background-size: cover;
                                                     height: auto;
                                                     overflow: hidden;
@@ -271,6 +297,7 @@ border-radius: 6px;
                                                     width: 100%;
                                                     padding-bottom: 50px;
                                                 }
+
                                                 #aboutfilter {
                                                     content: "";
                                                     position: absolute;
@@ -283,29 +310,42 @@ border-radius: 6px;
                                                     opacity: 0.9;
                                                     background-image: linear-gradient(to bottom, #810000, #810026, #730043, #55005c, #1a1d6b);
                                                 }
+
                                                 #alldataabout {
                                                     position: relative;
                                                 }
+
                                                 #aboutustitle {
-                                                    font-size: 40px;
+                                                    font-size: 55px;
                                                     font-weight: 500;
                                                     text-align: center;
                                                     color: white;
                                                     margin: 0;
                                                     padding: 20px 0 40px 0;
                                                 }
-                                                #aboutusdata {
-                                                    float: left;
-                                                    clear: right;
-                                                    margin-left: 60px;
-                                                    width: 65%;
+
+                                                #one {
+                                                    width: 85%;
                                                     padding: 10px 20px;
                                                     text-align: justify;
                                                     border-radius: 20px;
                                                     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-                                                    background: wheat;
+                                                    background: #95FFFF;
                                                     position: relative;
+                                                    float: right;
+                                                    height: max-content;
+                                                    font-size: 20px;
+                                                    margin-right: 6%;
+                                                    margin-bottom: 2%
                                                 }
+
+                                                #one img {
+                                                    float: left;
+                                                    margin-right: 20px;
+                                                    margin-top: 10px;
+                                                    height: 100px
+                                                }
+
                                                 #dirmess {
                                                     font-size: 20px;
                                                     font-weight: 200;
@@ -315,6 +355,7 @@ border-radius: 6px;
                                                     display: none;
                                                     padding: 20px 0 20px 0;
                                                 }
+
                                                 #dirconv {
                                                     font-size: 20px;
                                                     font-weight: 200;
@@ -324,79 +365,52 @@ border-radius: 6px;
                                                     margin: 0;
                                                     padding: 20px 0 0px 0;
                                                 }
-                                                #aboutusdata:after {
-                                                    content: '';
-                                                    position: absolute;
-                                                    right: 0;
-                                                    top: 50%;
-                                                    width: 0;
-                                                    height: 0;
-                                                    border: 28px solid transparent;
-                                                    border-left-color: wheat;
-                                                    border-right: 0;
-                                                    border-bottom: 0;
-                                                    margin-top: -14px;
-                                                    margin-right: -28px;
-                                                }
-                                                #by2 {
-                                                    float: left;
-                                                    clear: right;
-                                                    margin-left: 60px;
-                                                    width: 65%;
+
+                                                #two {
+                                                    width: 85%;
                                                     padding: 10px 20px;
                                                     text-align: justify;
                                                     border-radius: 20px;
                                                     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-                                                    background: wheat;
+                                                    background: #95FFFF;
                                                     position: relative;
-                                                }
-                                                #by2:after {
-                                                    content: '';
-                                                    position: absolute;
-                                                    right: 0;
-                                                    top: 50%;
-                                                    width: 0;
-                                                    height: 0;
-                                                    border: 28px solid transparent;
-                                                    border-left-color: wheat;
-                                                    border-right: 0;
-                                                    border-bottom: 0;
-                                                    margin-top: -14px;
-                                                    margin-right: -28px;
-                                                }
-                                                #one,
-                                                #two,
-                                                #three {
-                                                    width: 100%;
-                                                }
-                                                #by {
                                                     float: right;
-                                                    clear: left;
-                                                    margin-right: 60px;
-                                                    width: 65%;
+                                                    height: max-content;
+                                                    font-size: 20px;
+                                                    margin-right: 6%;
+                                                    margin-bottom: 2%;
+                                                }
+                                                
+                                                #two img {
+                                                    float: right;
+                                                    margin-left: 20px;
+                                                    margin-top: 10px;
+                                                    border-radius: 50%;
+                                                    height: 120px
+                                                }
+                                                
+                                                #three {
+                                                    width: 85%;
                                                     padding: 10px 20px;
                                                     text-align: justify;
                                                     border-radius: 20px;
                                                     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-                                                    background: wheat;
+                                                    background: #95FFFF;
                                                     position: relative;
+                                                    float: right;
+                                                    height: max-content;
+                                                    font-size: 20px;
+                                                    margin-right: 6%
                                                 }
-                                                #by:after {
-                                                    content: '';
-                                                    position: absolute;
-                                                    left: 0;
-                                                    top: 50%;
-                                                    width: 0;
-                                                    height: 0;
-                                                    border: 28px solid transparent;
-                                                    border-right-color: wheat;
-                                                    border-left: 0;
-                                                    border-bottom: 0;
-                                                    margin-top: -14px;
-                                                    margin-left: -28px;
+                                                
+                                                #three img {
+                                                    float: left;
+                                                    margin-right: 20px;
+                                                    height: 100px
                                                 }
+
                                                 #event {
-                                                    
+
                                                     color: white;
                                                     background-size: cover;
                                                     height: auto;
@@ -409,6 +423,7 @@ border-radius: 6px;
                                                     width: 100%;
                                                     padding-bottom: 50px;
                                                 }
+
                                                 #eventfilter {
                                                     content: "";
                                                     position: absolute;
@@ -421,10 +436,12 @@ border-radius: 6px;
                                                     opacity: 0.9;
                                                     background-image: linear-gradient(to top, #1b6600, #005e42, #005173, #003e85, #1a1d6b);
                                                 }
+
                                                 #eventdata {
                                                     position: relative;
                                                     text-align: center;
                                                 }
+
                                                 #eventdata p {
                                                     font-size: 70px;
                                                     color: white;
@@ -432,6 +449,7 @@ border-radius: 6px;
                                                     margin: 0;
                                                     padding-bottom: 5%;
                                                 }
+
                                                 #eventbutton {
                                                     position: relative;
                                                     text-align: center;
@@ -441,6 +459,7 @@ border-radius: 6px;
                                                     align-items: center;
                                                     flex-wrap: wrap;
                                                 }
+
                                                 #eventbutton button {
                                                     border: 1px solid black;
                                                     color: white;
@@ -453,9 +472,10 @@ border-radius: 6px;
                                                     box-shadow: inset 0px 0 0 1000px rgba(10, 0, 15, .3);
                                                     flex-basis: 40%;
                                                 }
+
                                                 #ourteam {
                                                     /* background: url(./3.jpg) center center no-repeat; */
-                                                   
+
                                                     color: white;
                                                     background-size: cover;
                                                     height: auto;
@@ -468,6 +488,7 @@ border-radius: 6px;
                                                     width: 100%;
                                                     padding-bottom: 90px;
                                                 }
+
                                                 #ourfilter {
                                                     content: "";
                                                     position: absolute;
@@ -480,6 +501,7 @@ border-radius: 6px;
                                                     opacity: 0.9;
                                                     background-image: linear-gradient(to bottom, #1b6600, #625000, #862d02, #8b003b, #320735);
                                                 }
+
                                                 #teamdata {
                                                     position: relative;
                                                     /* top: 50%; */
@@ -487,13 +509,16 @@ border-radius: 6px;
                                                     /* transform: translate(-50%, -50%); */
                                                     text-align: center;
                                                 }
+
                                                 #teamdata2 {
                                                     display: none;
                                                 }
+
                                                 .#teamdata p {
                                                     font-size: 40px;
                                                     font-weight: 500;
                                                 }
+
                                                 .teamphoto {
                                                     position: relative;
                                                     text-align: center;
@@ -505,6 +530,7 @@ border-radius: 6px;
                                                     /* width: 880px; */
                                                     margin: auto;
                                                 }
+
                                                 .gallery-item {
                                                     border-radius: 50%;
                                                     width: 200px;
@@ -512,6 +538,7 @@ border-radius: 6px;
                                                     margin: 10px;
                                                     text-decoration: none;
                                                 }
+
                                                 .gallery-item img {
                                                     position: relative;
                                                     border-radius: 50%;
@@ -520,6 +547,7 @@ border-radius: 6px;
                                                     margin: 10px;
                                                     text-decoration: none;
                                                 }
+
                                                 .text-wrapper {
                                                     position: relative;
                                                     width: 200px;
@@ -535,11 +563,14 @@ border-radius: 6px;
                                                     margin-top: -216px;
                                                     margin-left: 10px;
                                                 }
+
                                                 .text-wrapper:hover {
                                                     transition: all 0.8s ease;
                                                     background: rgba(0, 0, 0, 0.6);
                                                     opacity: 1;
+                                                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                                                 }
+
                                                 #teamphoto2 {
                                                     position: relative;
                                                     text-align: center;
@@ -550,12 +581,14 @@ border-radius: 6px;
                                                     flex-wrap: wrap;
                                                     width: auto
                                                 }
+
                                                 #teamphoto2 img {
                                                     border-radius: 50%;
                                                     width: 200px;
                                                     height: 200px;
                                                     margin: 10px;
                                                 }
+
                                                 #sponsorfilter {
                                                     content: "";
                                                     position: absolute;
@@ -568,6 +601,7 @@ border-radius: 6px;
                                                     opacity: 0.9;
                                                     background-image: linear-gradient(to top, #000000, #240d17, #3d102d, #541348, #320735);
                                                 }
+
                                                 #sponsors {
                                                     color: white;
                                                     background-size: cover;
@@ -581,7 +615,7 @@ border-radius: 6px;
                                                     align-items: center;
                                                     flex-wrap: wrap;
                                                     position: relative;
-                                                    
+
                                                     overflow: hidden;
                                                     position: relative;
                                                     background-attachment: fixed;
@@ -591,10 +625,12 @@ border-radius: 6px;
                                                     width: 100%;
                                                     padding-bottom: 50px
                                                 }
+
                                                 #sponsorsdata p {
                                                     font-size: 40px;
                                                     font-weight: 500;
                                                 }
+
                                                 #sponsorsdata {
                                                     position: relative;
                                                     /* top: 50%; */
@@ -602,6 +638,7 @@ border-radius: 6px;
                                                     /* transform: translate(-50%, -50%); */
                                                     text-align: center;
                                                 }
+
                                                 #sponsorslist {
                                                     position: relative;
                                                     text-align: center;
@@ -612,6 +649,7 @@ border-radius: 6px;
                                                     flex-wrap: wrap;
                                                     width: auto;
                                                 }
+
                                                 #sponsorslist img {
                                                     border-radius: 15%;
                                                     width: 150px;
@@ -619,9 +657,11 @@ border-radius: 6px;
                                                     margin: 8px;
                                                     filter: grayscale(100%);
                                                 }
+
                                                 #sponsorslist img:hover {
                                                     filter: grayscale(0%);
                                                 }
+
                                                 .headingg {
                                                     text-align: center;
                                                     font-size: 3.5rem;
@@ -629,6 +669,7 @@ border-radius: 6px;
                                                     margin-top: 4px;
                                                     padding-bottom: 20px;
                                                 }
+
                                                 .titlee {
                                                     text-align: left;
                                                     margin-left: 30px;
@@ -644,51 +685,54 @@ border-radius: 6px;
                                                 }
 
 
-hr {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  }
+                                                hr {
+                                                    border: 0;
+                                                    height: 1px;
+                                                    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                                                    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                                                    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                                                    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                                                }
 
 
 
                                             }
 
                                             @media only screen and (max-width: 480px) {
+
                                                 body,
                                                 html {
                                                     margin: 0;
                                                     padding: 0;
                                                     font-family: 'Avenir Next';
                                                 }
+
                                                 .footer {
-   position: relative;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: center;
-   margin: 0;
-}
+                                                    position: relative;
+                                                    left: 0;
+                                                    bottom: 0;
+                                                    width: 100%;
+                                                    background-color: black;
+                                                    color: white;
+                                                    text-align: center;
+                                                    margin: 0;
+                                                }
 
-.footer span{
-  color: white;
+                                                .footer span {
+                                                    color: white;
 
-text-align: center;
+                                                    text-align: center;
 
-font-size: 17px;
+                                                    font-size: 17px;
 
-margin: 0;
-}
+                                                    margin: 0;
+                                                }
 
                                                 #second {
                                                     display: none;
                                                     margin-top: -38px;
                                                 }
+
                                                 #toggle {
                                                     display: block;
                                                     width: 28px;
@@ -700,25 +744,27 @@ margin: 0;
                                                     left: 20px;
                                                     position: relative
                                                 }
-                                                #toggle2{
-                                                  display: block;
 
-background: white;
+                                                #toggle2 {
+                                                    display: block;
 
-color: black;
+                                                    background: white;
 
-top: 60px;
+                                                    color: black;
 
-left: 85%;
+                                                    top: 60px;
 
-position: relative;
+                                                    left: 85%;
 
-border: 1px solid black;
+                                                    position: relative;
 
-padding: 10px 15px;
+                                                    border: 1px solid black;
 
-border-radius: 6px;
+                                                    padding: 10px 15px;
+
+                                                    border-radius: 6px;
                                                 }
+
                                                 #toggle span:after,
                                                 #toggle span:before {
                                                     content: "";
@@ -726,13 +772,16 @@ border-radius: 6px;
                                                     left: 0;
                                                     top: -9px;
                                                 }
+
                                                 #toggle span:after {
                                                     top: 9px;
                                                 }
+
                                                 #toggle span {
                                                     position: relative;
                                                     display: block;
                                                 }
+
                                                 #toggle span,
                                                 #toggle span:after,
                                                 #toggle span:before {
@@ -743,20 +792,25 @@ border-radius: 6px;
                                                     backface-visibility: hidden;
                                                     border-radius: 2px;
                                                 }
+
                                                 /* on activation */
                                                 #toggle.on span {
                                                     background-color: transparent;
                                                 }
+
                                                 #toggle.on span:before {
                                                     transform: rotate(45deg) translate(5px, 5px);
                                                 }
+
                                                 #toggle.on span:after {
                                                     transform: rotate(-45deg) translate(7px, -8px);
                                                 }
-                                                #toggle.on+#menu {
+
+                                                #toggle.on + #menu {
                                                     opacity: 1;
                                                     visibility: visible;
                                                 }
+
                                                 .overlay {
                                                     height: 100%;
                                                     width: 0;
@@ -769,6 +823,7 @@ border-radius: 6px;
                                                     overflow-x: hidden;
                                                     transition: 0.5s;
                                                 }
+
                                                 .overlay-content {
                                                     position: relative;
                                                     top: 25%;
@@ -776,6 +831,7 @@ border-radius: 6px;
                                                     text-align: center;
                                                     margin-top: 30px;
                                                 }
+
                                                 .overlay a {
                                                     padding: 8px;
                                                     text-decoration: none;
@@ -784,20 +840,24 @@ border-radius: 6px;
                                                     display: block;
                                                     transition: 0.3s;
                                                 }
+
                                                 .overlay a:hover,
                                                 .overlay a:focus {
                                                     color: #f1f1f1;
                                                 }
+
                                                 .overlay .closebtn {
                                                     position: absolute;
                                                     top: 20px;
                                                     right: 45px;
                                                     font-size: 60px;
                                                 }
+
                                                 .btn :focus {
                                                     border: none;
                                                     outline: none;
                                                 }
+
                                                 .container .btn {
                                                     position: absolute;
                                                     top: 50%;
@@ -818,6 +878,7 @@ border-radius: 6px;
                                                     margin: 65% 0 0 0;
                                                     border-radius: 50px;
                                                 }
+
                                                 .btn span {
                                                     outline: none;
                                                     cursor: pointer;
@@ -825,13 +886,16 @@ border-radius: 6px;
                                                     position: relative;
                                                     transition: 0.5s;
                                                 }
+
                                                 .btn:hover span {
                                                     padding-right: 25px;
                                                 }
+
                                                 .btn:hover span:after {
                                                     opacity: 1;
                                                     right: 0;
                                                 }
+
                                                 .btn span:after {
                                                     content: '\00bb';
                                                     position: absolute;
@@ -840,6 +904,7 @@ border-radius: 6px;
                                                     right: -20px;
                                                     transition: 0.5s;
                                                 }
+
                                                 #homecontainer {
                                                     background: url(./main.jpg) center center no-repeat;
                                                     color: white;
@@ -853,6 +918,7 @@ border-radius: 6px;
                                                     background-repeat: no-repeat;
                                                     background-size: cover;
                                                 }
+
                                                 #topright {
                                                     position: absolute;
                                                     top: 5px;
@@ -872,12 +938,14 @@ border-radius: 6px;
                                                     opacity: 0.9;
                                                     background-image: linear-gradient(to top, #810000, #650211, #460915, #270b11, #000000);
                                                 }
+
                                                 #homedata {
                                                     position: relative;
                                                     top: 40%;
                                                     left: 50%;
                                                     transform: translate(-50%, -40%);
                                                 }
+
                                                 #apptimer {
                                                     position: relative;
                                                     display: flex;
@@ -887,6 +955,7 @@ border-radius: 6px;
                                                     color: wheat;
                                                     margin-top: 5%;
                                                 }
+
                                                 #apptimer li {
                                                     border: 1px solid white;
                                                     border-radius: 5px;
@@ -896,6 +965,7 @@ border-radius: 6px;
                                                     font-size: 15px;
                                                     text-transform: uppercase;
                                                 }
+
                                                 #titledata {
                                                     font-size: 55px;
                                                     font-weight: 700;
@@ -904,14 +974,17 @@ border-radius: 6px;
                                                     text-align: center;
                                                     text-shadow: 4px 0px #000
                                                 }
+
                                                 #subtitledata {
                                                     font-size: 18px;
                                                     text-align: center;
                                                 }
+
                                                 #datedata {
                                                     font-size: 24px;
                                                     text-align: center;
                                                 }
+
                                                 #aboutus {
                                                     height: auto;
                                                     overflow: hidden;
@@ -923,6 +996,7 @@ border-radius: 6px;
                                                     width: 100%;
                                                     padding-bottom: 50px;
                                                 }
+
                                                 #aboutfilter {
                                                     content: "";
                                                     position: absolute;
@@ -934,9 +1008,11 @@ border-radius: 6px;
                                                     left: 0;
                                                     background-image: linear-gradient(to bottom, #810000, #810026, #730043, #55005c, #1a1d6b);
                                                 }
+
                                                 #alldataabout {
                                                     position: relative;
                                                 }
+
                                                 #aboutustitle {
                                                     font-size: 40px;
                                                     font-weight: 500;
@@ -945,6 +1021,7 @@ border-radius: 6px;
                                                     margin: 0;
                                                     padding: 20px 0 40px 0;
                                                 }
+
                                                 #dirmess {
                                                     font-size: 20px;
                                                     font-weight: 200;
@@ -953,6 +1030,7 @@ border-radius: 6px;
                                                     margin: 0;
                                                     padding: 20px 0 20px 0;
                                                 }
+
                                                 #dirconv {
                                                     font-size: 20px;
                                                     font-weight: 200;
@@ -961,6 +1039,7 @@ border-radius: 6px;
                                                     margin: 0;
                                                     padding: 20px 0 0px 0;
                                                 }
+
                                                 #aboutusdata {
                                                     margin: 0 6%;
                                                     padding: 10px 20px;
@@ -969,6 +1048,7 @@ border-radius: 6px;
                                                     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
                                                     background: wheat;
                                                 }
+
                                                 #by {
                                                     margin: 0% 6%;
                                                     padding: 10px 20px;
@@ -977,6 +1057,7 @@ border-radius: 6px;
                                                     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
                                                     background: wheat;
                                                 }
+
                                                 #by2 {
                                                     margin: 5% 6%;
                                                     padding: 10px 20px;
@@ -985,6 +1066,7 @@ border-radius: 6px;
                                                     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
                                                     background: wheat;
                                                 }
+
                                                 #event {
                                                     color: white;
                                                     background-size: cover;
@@ -998,6 +1080,7 @@ border-radius: 6px;
                                                     width: 100%;
                                                     padding-bottom: 50px;
                                                 }
+
                                                 #eventfilter {
                                                     content: "";
                                                     position: absolute;
@@ -1009,10 +1092,12 @@ border-radius: 6px;
                                                     left: 0;
                                                     background-image: linear-gradient(to top, #1b6600, #005e42, #005173, #003e85, #1a1d6b);
                                                 }
+
                                                 #eventdata {
                                                     position: relative;
                                                     text-align: center;
                                                 }
+
                                                 #eventdata p {
                                                     font-size: 70px;
                                                     color: white;
@@ -1020,6 +1105,7 @@ border-radius: 6px;
                                                     margin: 0;
                                                     padding-bottom: 5%;
                                                 }
+
                                                 #eventbutton {
                                                     position: relative;
                                                     text-align: center;
@@ -1029,6 +1115,7 @@ border-radius: 6px;
                                                     align-items: center;
                                                     flex-wrap: wrap;
                                                 }
+
                                                 #eventbutton button {
                                                     border: 1px solid black;
                                                     color: white;
@@ -1041,10 +1128,18 @@ border-radius: 6px;
                                                     box-shadow: inset 0px 0 0 1000px rgba(10, 0, 15, .3);
                                                     flex-basis: 40%;
                                                 }
+
                                                 #eventbutton button:focus {
                                                     border: none;
                                                     outline: none;
+
+
                                                 }
+
+                                                #eventbutton:hover {
+                                                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                                                }
+
                                                 #ourteam {
                                                     color: white;
                                                     background-size: cover;
@@ -1058,6 +1153,7 @@ border-radius: 6px;
                                                     width: 100%;
                                                     padding-bottom: 75px;
                                                 }
+
                                                 #ourfilter {
                                                     content: "";
                                                     position: absolute;
@@ -1069,9 +1165,11 @@ border-radius: 6px;
                                                     left: 0;
                                                     background-image: linear-gradient(to bottom, #1b6600, #625000, #862d02, #8b003b, #320735);
                                                 }
+
                                                 #teamdata {
                                                     display: none;
                                                 }
+
                                                 #teamdata2 {
                                                     position: relative;
                                                     display: block;
@@ -1080,10 +1178,12 @@ border-radius: 6px;
                                                     /* transform: translate(-50%, -50%); */
                                                     text-align: center;
                                                 }
+
                                                 #teamdata2 p {
                                                     font-size: 40px;
                                                     font-weight: 500;
                                                 }
+
                                                 #teamphoto {
                                                     position: relative;
                                                     text-align: center;
@@ -1094,12 +1194,14 @@ border-radius: 6px;
                                                     flex-wrap: wrap;
                                                     width: auto;
                                                 }
+
                                                 #teamphoto img {
                                                     border-radius: 50%;
                                                     width: 75px;
                                                     height: 75px;
                                                     margin: 2px;
                                                 }
+
                                                 #teamphoto2 {
                                                     position: relative;
                                                     text-align: center;
@@ -1110,12 +1212,14 @@ border-radius: 6px;
                                                     flex-wrap: wrap;
                                                     width: auto;
                                                 }
+
                                                 #teamphoto2 img {
                                                     border-radius: 50%;
                                                     width: 75px;
                                                     height: 75px;
                                                     margin: 2px;
                                                 }
+
                                                 #sponsorfilter {
                                                     content: "";
                                                     position: absolute;
@@ -1127,6 +1231,7 @@ border-radius: 6px;
                                                     left: 0;
                                                     background-image: linear-gradient(to top, #000000, #240d17, #3d102d, #541348, #320735);
                                                 }
+
                                                 #sponsors {
                                                     color: white;
                                                     background-size: cover;
@@ -1148,10 +1253,12 @@ border-radius: 6px;
                                                     background-size: cover;
                                                     padding-bottom: 40px;
                                                 }
+
                                                 #sponsorsdata p {
                                                     font-size: 40px;
                                                     font-weight: 500;
                                                 }
+
                                                 #sponsorsdata {
                                                     position: relative;
                                                     /* top: 50%; */
@@ -1159,6 +1266,7 @@ border-radius: 6px;
                                                     /* transform: translate(-50%, -50%); */
                                                     text-align: center;
                                                 }
+
                                                 #sponsorslist {
                                                     position: relative;
                                                     text-align: center;
@@ -1169,6 +1277,7 @@ border-radius: 6px;
                                                     flex-wrap: wrap;
                                                     width: auto;
                                                 }
+
                                                 #sponsorslist img {
                                                     border-radius: 15%;
                                                     width: 90px;
@@ -1176,19 +1285,22 @@ border-radius: 6px;
                                                     margin: 4px;
                                                     filter: grayscale(0%);
                                                 }
+
                                                 #sponsorslist img:hover {
                                                     filter: grayscale(0%);
                                                 }
+
                                                 .headingg {
-                                                  text-align: center;
+                                                    text-align: center;
 
-font-size: 2.5rem;
+                                                    font-size: 2.5rem;
 
-font-weight: 600;
+                                                    font-weight: 600;
 
-margin-top: 17px;
-padding: 0 30px 30px 30px;
+                                                    margin-top: 17px;
+                                                    padding: 0 30px 30px 30px;
                                                 }
+
                                                 .titlee {
                                                     text-align: left;
 
@@ -1204,20 +1316,20 @@ padding: 0 30px 30px 30px;
                                                     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.884);
                                                 }
 
-                                                #topright2{
-                                                  position: absolute;
-top: 8px;
-left: 5px;
-width: 55px;
+                                                #topright2 {
+                                                    position: absolute;
+                                                    top: 8px;
+                                                    left: 5px;
+                                                    width: 55px;
                                                 }
 
 
-hr {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  }
+                                                hr {
+                                                    border: 0;
+                                                    height: 1px;
+                                                    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                                                    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                                                    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                                                    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                                                }
                                             }

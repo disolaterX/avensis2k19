@@ -996,6 +996,14 @@
                                                     width: 100%;
                                                     padding-bottom: 50px;
                                                 }
+                                                
+                                                #aboutus img {
+                                                    display: none;
+                                                }
+                                                
+                                                #aboutus strong{
+                                                    display: none
+                                                }
 
                                                 #aboutfilter {
                                                     content: "";
@@ -1046,7 +1054,7 @@
                                                     text-align: justify;
                                                     border-radius: 20px;
                                                     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-                                                    background: wheat;
+                                                    background: #95FFFF;
                                                 }
 
                                                 #by {
@@ -1055,7 +1063,7 @@
                                                     text-align: justify;
                                                     border-radius: 20px;
                                                     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-                                                    background: wheat;
+                                                    background: #95FFFF;
                                                 }
 
                                                 #by2 {
@@ -1064,7 +1072,7 @@
                                                     text-align: justify;
                                                     border-radius: 20px;
                                                     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-                                                    background: wheat;
+                                                    background: #95FFFF;
                                                 }
 
                                                 #event {
@@ -1099,7 +1107,7 @@
                                                 }
 
                                                 #eventdata p {
-                                                    font-size: 70px;
+                                                    font-size: 55px;
                                                     color: white;
                                                     font-weight: 508;
                                                     margin: 0;

@@ -1149,9 +1149,9 @@
                                                     color: white;
                                                     font-weight: 400;
                                                     font-size: 24px;
-                                                    padding: 60px 7X`` fA`5px;
+                                                    padding: 60px 75px;
                                                     border-radius: 10px;
-                                                    margin: 0 25px 45px 25px;
+                                                    margin: 0 25px 25px 25px;
                                                     flex-grow: 1;
                                                     box-shadow: inset 0px 0 0 1000px rgba(10, 0, 15, .3);
                                                     flex-basis: 40%;
@@ -1164,9 +1164,7 @@
 
                                                 }
 
-                                                #eventbutton:hover {
-                                                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                                                }
+
 
                                                 #ourteam {
                                                     color: white;

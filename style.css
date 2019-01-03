@@ -235,7 +235,7 @@
                                                     bottom: 0;
                                                     left: 0;
                                                     opacity: 0.9;
-                                                    background-image: linear-gradient(to top, #810000, #650211, #460915, #270b11, #000000);
+                                                    background-image: linear-gradient(to bottom, #000000, #15080b, #211013, #2e1417, #3b171a, #4d1e20, #612527, #742c2c, #943838, #b54545, #d85252, #fb5f5f);
                                                 }
 
                                                 #homedata {
@@ -266,7 +266,7 @@
                                                 }
 
                                                 #titledata {
-                                                    font-size: 66px;
+                                                    font-size: 70px;
                                                     font-weight: 700;
                                                     margin: 0;
                                                     padding-bottom: 30px;
@@ -307,8 +307,7 @@
                                                     right: 0;
                                                     bottom: 0;
                                                     left: 0;
-                                                    opacity: 0.9;
-                                                    background-image: linear-gradient(to bottom, #810000, #810026, #730043, #55005c, #1a1d6b);
+                                                    background: whitesmoke;
                                                 }
 
                                                 #alldataabout {
@@ -316,10 +315,10 @@
                                                 }
 
                                                 #aboutustitle {
-                                                    font-size: 55px;
+                                                    font-size: 70px;
                                                     font-weight: 500;
                                                     text-align: center;
-                                                    color: white;
+                                                    color: black;
                                                     margin: 0;
                                                     padding: 20px 0 40px 0;
                                                 }
@@ -329,8 +328,8 @@
                                                     padding: 10px 20px;
                                                     text-align: justify;
                                                     border-radius: 20px;
-                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-                                                    background: #95FFFF;
+                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 4px;
+                                                    background: white;
                                                     position: relative;
                                                     float: right;
                                                     height: max-content;
@@ -371,8 +370,8 @@
                                                     padding: 10px 20px;
                                                     text-align: justify;
                                                     border-radius: 20px;
-                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-                                                    background: #95FFFF;
+                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 4px;
+                                                    background: white;
                                                     position: relative;
                                                     float: right;
                                                     height: max-content;
@@ -380,31 +379,30 @@
                                                     margin-right: 6%;
                                                     margin-bottom: 2%;
                                                 }
-                                                
+
                                                 #two img {
                                                     float: right;
-                                                    margin-left: 20px;
-                                                    margin-top: 10px;
+                                                    margin: 15px 25px 6px 65px;
                                                     border-radius: 50%;
-                                                    height: 120px
+                                                    height: 80px
                                                 }
-                                                
+
                                                 #three {
                                                     width: 85%;
                                                     padding: 10px 20px;
                                                     text-align: justify;
                                                     border-radius: 20px;
-                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-                                                    background: #95FFFF;
+                                                    box-shadow: rgba(0, 0, 0, 0.8) 0 0 4px;
+                                                    background: white;
                                                     position: relative;
                                                     float: right;
                                                     height: max-content;
                                                     font-size: 20px;
                                                     margin-right: 6%
                                                 }
-                                                
+
                                                 #three img {
-                                                    float: left;
+                                                    float: right;
                                                     margin-right: 20px;
                                                     height: 100px
                                                 }
@@ -421,7 +419,8 @@
                                                     background-repeat: no-repeat;
                                                     background-size: cover;
                                                     width: 100%;
-                                                    padding-bottom: 50px;
+                                                    padding-bottom: 100px;
+                                                    padding-top: 30px;
                                                 }
 
                                                 #eventfilter {
@@ -433,8 +432,7 @@
                                                     right: 0;
                                                     bottom: 0;
                                                     left: 0;
-                                                    opacity: 0.9;
-                                                    background-image: linear-gradient(to top, #1b6600, #005e42, #005173, #003e85, #1a1d6b);
+                                                    background-image: linear-gradient(to bottom, #000000, #391a21, #6f2b37, #a93d48, #e55353);
                                                 }
 
                                                 #eventdata {
@@ -445,7 +443,7 @@
                                                 #eventdata p {
                                                     font-size: 70px;
                                                     color: white;
-                                                    font-weight: 508;
+                                                    font-weight: 500;
                                                     margin: 0;
                                                     padding-bottom: 5%;
                                                 }
@@ -461,17 +459,18 @@
                                                 }
 
                                                 #eventbutton button {
-                                                    border: 1px solid black;
+                                                    border: 1px solid white;
                                                     color: white;
-                                                    font-weight: 400;
-                                                    font-size: 24px;
-                                                    padding: 60px 75px;
+                                                    font-weight: 300;
+                                                    font-size: 40px;
+                                                    padding: 50px 25px;
                                                     border-radius: 10px;
                                                     margin: 0 25px 25px 25px;
-                                                    flex-grow: 1;
-                                                    box-shadow: inset 0px 0 0 1000px rgba(10, 0, 15, .3);
+                                                    box-shadow: inset 0px 0 0 100px rgba(10, 0, 0, .3);
                                                     flex-basis: 40%;
                                                 }
+
+
 
                                                 #ourteam {
                                                     /* background: url(./3.jpg) center center no-repeat; */
@@ -498,8 +497,7 @@
                                                     right: 0;
                                                     bottom: 0;
                                                     left: 0;
-                                                    opacity: 0.9;
-                                                    background-image: linear-gradient(to bottom, #1b6600, #625000, #862d02, #8b003b, #320735);
+                                                    background-image: linear-gradient(to top, #000000, #391a21, #6f2b37, #a93d48, #e55353);
                                                 }
 
                                                 #teamdata {
@@ -514,8 +512,8 @@
                                                     display: none;
                                                 }
 
-                                                .#teamdata p {
-                                                    font-size: 40px;
+                                                #teamdata p {
+                                                    font-size: 70px;
                                                     font-weight: 500;
                                                 }
 
@@ -558,7 +556,7 @@
                                                     justify-content: center;
                                                     text-align: center;
                                                     flex-wrap: wrap;
-                                                    color: #fff;
+                                                    color: #000;
                                                     opacity: 0;
                                                     margin-top: -216px;
                                                     margin-left: 10px;
@@ -566,8 +564,8 @@
 
                                                 .text-wrapper:hover {
                                                     transition: all 0.8s ease;
-                                                    background: rgba(0, 0, 0, 0.6);
-                                                    opacity: 1;
+                                                    background: white;
+                                                    opacity: 0.7;
                                                     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                                                 }
 
@@ -598,8 +596,7 @@
                                                     right: 0;
                                                     bottom: 0;
                                                     left: 0;
-                                                    opacity: 0.9;
-                                                    background-image: linear-gradient(to top, #000000, #240d17, #3d102d, #541348, #320735);
+                                                    background-image: linear-gradient(to bottom, #000000, #391a21, #6f2b37, #a93d48, #e55353);
                                                 }
 
                                                 #sponsors {
@@ -622,12 +619,13 @@
                                                     background-position: center;
                                                     background-repeat: no-repeat;
                                                     background-size: cover;
-                                                    width: 100%;
                                                     padding-bottom: 50px
                                                 }
 
                                                 #sponsorsdata p {
-                                                    font-size: 40px;
+                                                    margin-top: 50px;
+                                                    padding-bottom: 35px;
+                                                    font-size: 70px;
                                                     font-weight: 500;
                                                 }
 
@@ -672,19 +670,19 @@
 
                                                 .titlee {
                                                     text-align: left;
-                                                    margin-left: 30px;
+                                                    margin-left: 50px;
+                                                    font-size: 25px
                                                 }
 
                                                 #second p {
-                                                    border: 1px solid black;
                                                     text-align: justify;
                                                     padding: 25px;
                                                     margin: 25px;
-                                                    border-radius: 15px;
-                                                    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.884);
+                                                    font-size: 18px;
                                                 }
 
 
+                                                /*
                                                 hr {
                                                     border: 0;
                                                     height: 1px;
@@ -692,6 +690,28 @@
                                                     background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
                                                     background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
                                                     background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                                                }
+*/
+                                                hr.style-six {
+                                                    padding: 0;
+                                                    border: none;
+                                                    height: 1px;
+                                                    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+                                                    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+                                                    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+                                                    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+                                                    color: #333;
+                                                    text-align: center;
+                                                }
+
+                                                hr.style-six:after {
+                                                    content: " ";
+                                                    display: inline-block;
+                                                    position: relative;
+                                                    top: -1.1em;
+                                                    padding: 19px 2.75em;
+                                                    background: #fff url(./hr.png) no-repeat scroll center;
+
                                                 }
 
 
@@ -996,12 +1016,12 @@
                                                     width: 100%;
                                                     padding-bottom: 50px;
                                                 }
-                                                
+
                                                 #aboutus img {
                                                     display: none;
                                                 }
-                                                
-                                                #aboutus strong{
+
+                                                #aboutus strong {
                                                     display: none
                                                 }
 
@@ -1129,9 +1149,9 @@
                                                     color: white;
                                                     font-weight: 400;
                                                     font-size: 24px;
-                                                    padding: 60px 75px;
+                                                    padding: 60px 7X`` fA`5px;
                                                     border-radius: 10px;
-                                                    margin: 0 25px 25px 25px;
+                                                    margin: 0 25px 45px 25px;
                                                     flex-grow: 1;
                                                     box-shadow: inset 0px 0 0 1000px rgba(10, 0, 15, .3);
                                                     flex-basis: 40%;
